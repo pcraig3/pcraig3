@@ -1,0 +1,31 @@
+{
+  "name": "j2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "be": "set ASSET_PREFIX=/j2 && npm run build && npm run export",
+    "build": "next build",
+    "dev": "node server",
+    "export": "next export",
+    "start": "NODE_ENV=production node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-emotion": "^9.2.11",
+    "emotion": "^9.2.12",
+    "emotion-server": "^9.2.12",
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "next-optimized-images": "^1.4.1",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-emotion": "^9.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
