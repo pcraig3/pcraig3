@@ -12,7 +12,6 @@ import {
 } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
-import Footer from './_footer'
 
 const globalStyles = injectGlobal`
   html {
@@ -111,8 +110,6 @@ class Layout extends Component {
           {h1 ? <h1 className={visuallyhidden}>{h1}</h1> : ''}
           {children}
         </main>
-
-        <Footer />
       </div>
     )
   }
