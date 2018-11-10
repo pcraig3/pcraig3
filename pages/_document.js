@@ -21,6 +21,10 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           {/* tags in here appears after the tags in <HEAD> in Layout */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Gothic+A1:400,600"
+            rel="stylesheet"
+          />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>

@@ -15,8 +15,7 @@ import Nav from './_nav'
 
 const globalStyles = injectGlobal`
   html {
-    font-family: sans-serif;
-    text-transform: uppercase;
+    font-family: 'Gothic A1', sans-serif;
     overflow-y: scroll;
   }
 

@@ -76,6 +76,14 @@ export const typograpyStyles = css`
   body {
     font-size: ${fontSizes.md}rem;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
   h1 {
     margin-bottom: ${spacing.xl}px;
   }
