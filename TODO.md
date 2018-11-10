@@ -1,15 +1,18 @@
 # to do
-
-- images are also links
-- cursor hover state for portfolio images
+- clean up the current post
 - add blog post list template
+- do a little mobile run-through
+- add a second post
+- add an about page
 - add images
 - react prop types
-- add readme to gh-pages export
+- add linting
 - pally scan
 
 # done
 
+- ✅ add readme to gh-pages export
+- ✅ images are also links
 - ✅ add blog post template
 - ✅ work not portfolio
 - ✅ publish to gh pages
