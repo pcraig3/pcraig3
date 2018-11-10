@@ -14,8 +14,8 @@ module.exports = withOptimizedImages({
       '/m/about': { page: '/about', query: { showMenu: 'true' } },
       '/contact': { page: '/contact' },
       '/m/contact': { page: '/contact', query: { showMenu: 'true' } },
-      '/portfolio': { page: '/portfolio' },
-      '/m/portfolio': { page: '/portfolio', query: { showMenu: 'true' } },
+      '/work': { page: '/work' },
+      '/m/work': { page: '/work', query: { showMenu: 'true' } },
       '/typography': { page: '/typography' },
       '/m/typography': { page: '/typography', query: { showMenu: 'true' } },
     }

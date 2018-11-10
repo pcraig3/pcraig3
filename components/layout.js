@@ -106,7 +106,7 @@ class Layout extends Component {
             ${mainStyles} ${className};
           `}
         >
-          {h1 ? <h1 className={visuallyhidden}>{h1}</h1> : ''}
+          {h1 ? <h1 className={visuallyhidden}>{h1}</h1> : null}
           {children}
         </main>
       </div>

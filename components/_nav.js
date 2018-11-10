@@ -148,7 +148,7 @@ export default ({ onToggle, showMenu, pathname }) => (
     <div className={divStyles} id="navLinks">
       {showMenu ? <NavLink path="/" pathname={pathname} /> : ''}
       <NavLink path="/about" pathname={pathname} />
-      <NavLink path="/portfolio" pathname={pathname} />
+      <NavLink path="/work" pathname={pathname} />
       <NavLink path="/contact" pathname={pathname} />
     </div>
   </nav>
