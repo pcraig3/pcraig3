@@ -4,8 +4,8 @@ import { fontSizes, mq, spacing, colours } from './__styles'
 
 const logoStyles = css`
   position: fixed;
-  bottom: ${spacing.sm}px;
-  left: ${spacing.sm}px;
+  bottom: ${spacing.sm};
+  left: ${spacing.sm};
   display: inline-block;
   font-size: ${fontSizes.lg}rem;
 
@@ -14,14 +14,14 @@ const logoStyles = css`
   }
 
   ${mq.xs(css`
-    left: ${spacing.md}px;
+    left: ${spacing.md};
   `)};
 
   ${mq.sm(css`
     position: static;
     bottom: initial;
     left: initial;
-    margin-bottom: ${spacing.xl}px;
+    margin-bottom: ${spacing.xl};
 
     .show-menu & {
       display: inline-block;
@@ -47,7 +47,7 @@ const logoStyles = css`
     background-color: inherit;
   }
   & a span {
-    padding: 0 ${spacing.xxs}px;
+    padding: 0 ${spacing.xxs};
     display: inline-block;
     background-color: ${colours.secondary};
     border-bottom: 2px solid black;

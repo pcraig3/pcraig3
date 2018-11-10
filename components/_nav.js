@@ -30,7 +30,7 @@ const divStyles = css`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  margin-left: -${spacing.xxs}px;
+  margin-left: -${spacing.xxs};
   ${pointLeftLinks};
 
   .hide-menu & {
@@ -50,11 +50,10 @@ const divStyles = css`
   `)};
 
   a {
-    padding: 0 ${spacing.xxs}px;
     overflow: hidden;
 
     &:not(:last-of-type) {
-      margin-bottom: ${spacing.xxs}px;
+      margin-bottom: ${spacing.xxs};
     }
   }
 
@@ -70,8 +69,8 @@ const buttonStyles = css`
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: ${spacing.md}px;
-  padding: 0 ${spacing.xxs}px;
+  margin-left: ${spacing.md};
+  padding: 0 ${spacing.xxs};
   width: 30px;
   text-align: center;
   border: 2px solid ${colours.secondary};

@@ -1,21 +1,15 @@
 import Link from 'next/link'
 import { css } from 'react-emotion'
-import { spacing, pointLeftLinks } from '../components/__styles'
+import { spacing, pointLeftJustifiedLinks } from '../components/__styles'
 import Layout from '../components/layout'
 
 const mainStyles = css`
   span {
     display: block;
-    margin-bottom: ${spacing.xxs}px;
+    margin-bottom: ${spacing.xxs};
   }
 
-  a {
-    padding-left: ${spacing.xxs}px;
-    padding-right: ${spacing.xxs}px;
-    margin-left: -${spacing.xxs}px;
-  }
-
-  ${pointLeftLinks};
+  ${pointLeftJustifiedLinks};
 `
 export default () => (
   <Layout title="contact paul craig" className={mainStyles} h1="Contact">

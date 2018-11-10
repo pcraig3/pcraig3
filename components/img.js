@@ -7,9 +7,9 @@ const imgStyles = css`
   flex: 1 1 100%;
   height: 100%;
   overflow: initial;
-  padding: ${spacing.sm}px;
+  padding: ${spacing.sm};
   position: relative;
-  margin-bottom: ${spacing.xl}px !important;
+  margin-bottom: ${spacing.xl} !important;
 
   ${mq.xs(css`
     padding: 20px;
@@ -57,7 +57,7 @@ const captionStyles = css`
   color: ${colours.secondary};
   z-index: 2;
   background: linear-gradient(rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
-  padding-bottom: ${spacing.lg}px;
+  padding-bottom: ${spacing.lg};
 
   ${mq.xs(css`
     width: calc(100% - 40px);
@@ -78,8 +78,8 @@ const captionStyles = css`
 export default ({ src, alt, title, year }) => (
   <figure className={imgStyles}>
     <figcaption className={captionStyles}>
-      <h2>{title}</h2>
-      <h3>{year}</h3>
+      {title ? <h2>{title}</h2> : null}
+      {year ? <h3>{year}</h3> : null}
     </figcaption>
     <img src={`${src}`} alt={alt} />
   </figure>

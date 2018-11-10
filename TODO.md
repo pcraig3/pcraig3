@@ -1,15 +1,16 @@
 # to do
 
-- add blog post template
-- work not portfolio
 - cursor hover state for portfolio images
 - add blog post list template
 - optimize images somehow
-- add real images
+- add images
+- add readme to gh-pages export
 - pally scan
 
 # done
 
+- ✅ add blog post template
+- ✅ work not portfolio
 - ✅ publish to gh pages
 - ✅ fix for (potentially) low-contrast image captions
 - ✅ axe scan

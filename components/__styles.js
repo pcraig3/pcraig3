@@ -1,8 +1,7 @@
 import { css } from 'react-emotion'
 
-export const ratio = parseFloat(1.414)
+export const ratio = parseFloat(1.333)
 export const fontSizes = {
-  base: 1,
   md: 1,
   sm: 1 / ratio,
   xs: 1 / (ratio * ratio),
@@ -13,14 +12,13 @@ export const fontSizes = {
 
 export const spacingBase = 30
 export const spacing = {
-  base: spacingBase,
-  md: spacingBase,
-  sm: spacingBase / 2,
-  xs: spacingBase / 3,
-  xxs: spacingBase / 6,
-  lg: parseInt(spacingBase * 1.35),
-  xl: spacingBase * 2,
-  xxl: spacingBase * 3,
+  md: `${spacingBase}px`,
+  sm: `${spacingBase / 2}px`,
+  xs: `${spacingBase / 3}px`,
+  xxs: `${spacingBase / 6}px`,
+  lg: `${parseInt(spacingBase * 1.35)}px`,
+  xl: `${spacingBase * 2}px`,
+  xxl: `${spacingBase * 3}px`,
 }
 
 export const colours = {
@@ -85,28 +83,32 @@ export const typograpyStyles = css`
     font-weight: 600;
   }
   h1 {
-    margin-bottom: ${spacing.xl}px;
+    margin-bottom: ${spacing.xl};
   }
   h2 {
-    margin-bottom: ${spacing.md}px;
+    margin-bottom: ${spacing.md};
     ${mq.xs(css`
-      margin-top: ${spacing.xl}px;
+      margin-top: ${spacing.xl};
     `)};
   }
   h3,
   h4,
   h5,
   h6 {
-    margin-bottom: ${spacing.md}px;
+    margin-bottom: ${spacing.md};
   }
   h1 {
     font-size: ${fontSizes.xl}rem;
+    line-height: 1.05;
+
     ${mq.xs(css`
       font-size: ${fontSizes.xxl}rem;
     `)};
   }
   h2 {
     font-size: ${fontSizes.lg}rem;
+    line-height: 1.05;
+
     ${mq.xs(css`
       font-size: ${fontSizes.xl}rem;
     `)};
@@ -116,27 +118,29 @@ export const typograpyStyles = css`
   h5,
   h6 {
     font-size: ${fontSizes.md}rem;
+    line-height: 1.15;
+
     ${mq.xs(css`
       font-size: ${fontSizes.lg}rem;
     `)};
   }
   blockquote {
-    margin-left: ${spacing.md}px;
+    margin-left: ${spacing.md};
   }
   p {
-    margin-bottom: ${spacing.md}px;
+    margin-bottom: ${spacing.md};
   }
 
   ul,
   ol {
-    margin-bottom: ${spacing.md}px;
+    margin-bottom: ${spacing.md};
     margin-left: 22px;
     ${mq.xs(css`
       margin-left: 0;
     `)};
 
     li {
-      margin-bottom: ${spacing.xxs}px;
+      margin-bottom: ${spacing.xxs};
 
       &:last-child {
         margin-bottom: 0;
@@ -158,6 +162,8 @@ export const bisqueLinks = css`
 
 const _pointLinks = css`
   a {
+    padding: 0 ${spacing.xxs};
+
     &::before,
     &::after {
       color: transparent;
@@ -184,6 +190,14 @@ export const pointLeftLinks = css`
   }
 `
 
+export const pointLeftJustifiedLinks = css`
+  ${pointLeftLinks};
+
+  a {
+    margin-left: -${spacing.xxs};
+  }
+`
+
 export const pointRightLinks = css`
   ${_pointLinks};
 
@@ -200,18 +214,18 @@ export const layoutStyles = css`
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: ${spacing.sm}px;
+  margin: ${spacing.sm};
 
   ${mq.xs(css`
-    margin: ${spacing.md}px;
+    margin: ${spacing.md};
   `)};
 
   ${mq.sm(css`
-    margin: ${spacing.lg}px;
+    margin: ${spacing.lg};
   `)};
 
   ${mq.md(css`
-    margin: ${spacing.xl}px;
+    margin: ${spacing.xl};
   `)};
 `
 
@@ -221,18 +235,18 @@ export const headerStyles = css`
   bottom: 0;
   right: 0;
   width: 100%;
-  padding: ${spacing.sm}px ${spacing.sm}px;
+  padding: ${spacing.sm} ${spacing.sm};
   text-align: right;
   border-top: 2px solid ${colours.secondary};
   background-color: white;
 
   ${mq.xs(css`
-    padding: ${spacing.sm}px ${spacing.md}px;
+    padding: ${spacing.sm} ${spacing.md};
   `)};
 
   ${mq.sm(css`
     position: sticky;
-    top: ${spacing.lg}px;
+    top: ${spacing.lg};
     flex: 1;
     padding: 0;
     width: initial;
@@ -241,27 +255,27 @@ export const headerStyles = css`
   `)};
 
   ${mq.md(css`
-    top: ${spacing.xl}px;
+    top: ${spacing.xl};
   `)};
 `
 
 export const mainStyles = css`
   flex: 4;
   margin-right: 0;
-  margin-bottom: ${spacing.md}px;
+  margin-bottom: ${spacing.md};
 
   ${mq.sm(css`
-    margin-right: ${spacing.xs}px;
+    margin-right: ${spacing.xs};
     margin-bottom: 0;
   `)};
 
   ${mq.md(css`
     flex: 3;
-    margin-right: ${spacing.xl}px;
+    margin-right: ${spacing.xl};
   `)};
 
   div {
-    margin-bottom: ${spacing.md}px;
+    margin-bottom: ${spacing.md};
   }
 
   ${bisqueLinks};
