@@ -1,7 +1,9 @@
 # to do
 
+- publish to gh pages
 - add blog post template
-- single pages for images
+- work not portfolio
+- add blog post list template
 - optimize images somehow
 - add real images
 - pally scan

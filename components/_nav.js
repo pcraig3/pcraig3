@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { css } from 'react-emotion'
-import { assetPrefix } from '../next.config'
 import {
   bisqueLinks,
   colours,
@@ -111,9 +110,7 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
   return (
     <form
       className={formStyles}
-      action={
-        showMenu ? `${assetPrefix}${pathname}` : `${assetPrefix}/m${pathname}`
-      }
+      action={showMenu ? `${pathname}` : `/m${pathname}`}
     >
       <button
         className={buttonStyles}
@@ -138,7 +135,7 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
 }
 
 const NavLink = ({ path, pathname }) => (
-  <Link href={`${assetPrefix}${path}`}>
+  <Link href={`${path}`}>
     <a {...(path === pathname ? { 'aria-current': 'page' } : {})}>
       {path === '/' ? 'Home' : path.split('/').pop()}
     </a>

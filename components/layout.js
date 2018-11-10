@@ -120,7 +120,7 @@ class Layout extends Component {
 
 Layout.defaultProps = {
   children: {},
-  title: 'julia craig dot CA',
+  title: 'p craig 3 dot CA',
   className: css``,
   url: {},
   h1: null,

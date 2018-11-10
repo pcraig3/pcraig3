@@ -1,6 +1,5 @@
 import { css } from 'react-emotion'
 import { spacing, colours, mq } from './__styles'
-import { assetPrefix } from '../next.config'
 
 const imgStyles = css`
   background-color: ${colours.secondary};
@@ -82,6 +81,6 @@ export default ({ src, alt, title, year }) => (
       <h2>{title}</h2>
       <h3>{year}</h3>
     </figcaption>
-    <img src={`${assetPrefix}${src}`} alt={alt} />
+    <img src={`${src}`} alt={alt} />
   </figure>
 )

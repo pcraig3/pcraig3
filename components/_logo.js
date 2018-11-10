@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { css } from 'react-emotion'
-import { assetPrefix } from '../next.config'
 import { fontSizes, mq, spacing, colours } from './__styles'
 
 const logoStyles = css`
@@ -64,9 +63,9 @@ const logoStyles = css`
 `
 export default () => (
   <div className={logoStyles}>
-    <Link href="/" as={`${assetPrefix}/`}>
+    <Link href="/">
       <a>
-        <span>julia</span>
+        <span>paul</span>
         <br />
         <span>craig</span>
       </a>

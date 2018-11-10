@@ -1,10 +1,10 @@
 {
-  "name": "j2",
+  "name": "pcraig3",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio site (reboot) for paul craig",
   "main": "index.js",
   "scripts": {
-    "be": "set ASSET_PREFIX=/j2 && npm run build && npm run export",
+    "be": "npm run build && npm run export",
     "build": "next build",
     "dev": "node server",
     "export": "next export",
@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "pcraig3",
   "license": "ISC",
   "dependencies": {
     "babel-plugin-emotion": "^9.2.11",

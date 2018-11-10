@@ -6,10 +6,6 @@ module.exports = withOptimizedImages({
   optimizeImagesInDev: true,
 
   /* config for general next.js */
-  assetPrefix:
-    typeof process.env.ASSET_PREFIX === 'string'
-      ? process.env.ASSET_PREFIX.trim()
-      : '',
   exportPathMap: function() {
     return {
       '/': { page: '/' },

@@ -18,17 +18,13 @@ const mainStyles = css`
   ${pointLeftLinks};
 `
 export default () => (
-  <Layout
-    title="contact julia craig dot CA"
-    className={mainStyles}
-    h1="Contact"
-  >
+  <Layout title="contact paul craig" className={mainStyles} h1="Contact">
     <p>
       <span>Email</span>
       <span>
-        <Link href="mailto:juliacraig3@cmail.carleton.ca">
+        <Link href="mailto:paul@pcraig3.ca">
           <a title="pls no spam">
-            juliacraig3<wbr />@cmail.carleton.ca
+            paul<wbr />@pcraig3.ca
           </a>
         </Link>
       </span>
@@ -36,16 +32,24 @@ export default () => (
     <p>
       <span>Twitter</span>
       <span>
-        <Link href="https://twitter.com/JayCraig1101">
-          <a title="pls tweet at me">@JayCraig1101</a>
+        <Link href="https://twitter.com/pcraig3">
+          <a title="pls follow me">@pcraig3</a>
         </Link>
       </span>
     </p>
     <p>
-      <span>Facebook</span>
+      <span>GitHub</span>
       <span>
-        <Link href="https://www.facebook.com/julia.craig.904">
-          <a title="pls be my friend">julia.craig.904</a>
+        <Link href="https://www.github.com/pcraig3">
+          <a title="pls star me">pcraig3</a>
+        </Link>
+      </span>
+    </p>
+    <p>
+      <span>Facebook(?)</span>
+      <span>
+        <Link href="https://www.facebook.com/PaulMCraig">
+          <a title="pls be my friend">PaulMCraig</a>
         </Link>
       </span>
     </p>

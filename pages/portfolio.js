@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import Img from '../components/img'
 
 export default () => (
-  <Layout title="portfolio of julia craig dot CA" h1="Portfolio">
+  <Layout title="portfolio of paul craig" h1="Portfolio">
     <h1>Portfolio</h1>
     <Img
       src={require('../img/laiyuhsiang-146977-unsplash.jpg')}
