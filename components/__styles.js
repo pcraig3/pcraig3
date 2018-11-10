@@ -24,6 +24,7 @@ export const spacing = {
 export const colours = {
   primary: 'mediumslateblue',
   secondary: '#FFDFDC',
+  tertiary: 'aquamarine',
   focus: 'darkturquoise',
 }
 

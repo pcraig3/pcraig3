@@ -1,9 +1,10 @@
 # to do
 
+- images are also links
 - cursor hover state for portfolio images
 - add blog post list template
-- optimize images somehow
 - add images
+- react prop types
 - add readme to gh-pages export
 - pally scan
 

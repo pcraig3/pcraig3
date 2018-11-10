@@ -1,15 +1,45 @@
 import { css } from 'react-emotion'
 import { spacing, colours, mq } from './__styles'
 
+const _hoverImg = css`
+  background-color: #ffe4c4; /* can't use colours here because they get distorted */
+
+  figcaption {
+    display: block;
+  }
+
+  img {
+    filter: grayscale(100%) contrast(1) blur(0);
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  &::before {
+    background-color: #7b68ee;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    mix-blend-mode: soft-light;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+`
+
 const imgStyles = css`
   background-color: ${colours.secondary};
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1 1 100%;
   height: 100%;
   overflow: initial;
   padding: ${spacing.sm};
   position: relative;
-  margin-bottom: ${spacing.xl} !important;
 
   ${mq.xs(css`
     padding: 20px;
@@ -22,65 +52,62 @@ const imgStyles = css`
     width: 100%;
   }
 
-  :not(:hover) {
-    background-color: #ffe4c4; /* can't use colours here because they get distorted */
+  figcaption {
+    display: none;
+  }
 
-    img {
-      filter: grayscale(100%) contrast(1) blur(0);
-      mix-blend-mode: multiply;
-      object-fit: cover;
-      opacity: 1;
-    }
-
-    &::before {
-      background-color: #7b68ee;
-      bottom: 0;
-      content: '';
-      height: 100%;
-      left: 0;
-      mix-blend-mode: soft-light;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%;
-      z-index: 1;
-    }
+  :hover {
+    ${_hoverImg};
   }
 `
 
 const captionStyles = css`
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  width: calc(100% - 30px);
-  color: ${colours.secondary};
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
   z-index: 2;
-  background: linear-gradient(rgba(20, 20, 20, 1), rgba(20, 20, 20, 0));
-  padding-bottom: ${spacing.lg};
-
-  ${mq.xs(css`
-    width: calc(100% - 40px);
-  `)};
+  padding: ${spacing.sm};
+  color: black;
+  background-color: ${colours.tertiary};
 
   > * {
-    margin: 0;
+    margin: 0 !important;
     display: inline-block;
     line-height: 0.9;
   }
 
-  h3 {
-    text-align: right;
-    margin-right: 1px;
+  :hover {
+    border-bottom: 2px solid ${colours.tertiary};
+    border-right: 2px solid ${colours.tertiary};
+
+    background: white;
   }
 `
 
-export default ({ src, alt, title, year }) => (
+const Figure = ({ src, alt, hoverText }) => (
   <figure className={imgStyles}>
     <figcaption className={captionStyles}>
-      {title ? <h2>{title}</h2> : null}
-      {year ? <h3>{year}</h3> : null}
+      {hoverText ? <div>{hoverText} ☞</div> : null}
     </figcaption>
     <img src={`${src}`} alt={alt} />
   </figure>
+)
+
+const imgWrapperStyles = css`
+  margin-bottom: ${spacing.xl} !important;
+  }
+
+  a:focus figure { ${_hoverImg}; }
+`
+
+export default ({ href, ...props }) => (
+  <div className={imgWrapperStyles}>
+    {href ? (
+      <a href={href} target="_blank">
+        <Figure {...props} />
+      </a>
+    ) : (
+      <Figure {...props} />
+    )}
+  </div>
 )

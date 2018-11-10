@@ -10,6 +10,8 @@ export default () => (
     }
     h2="Making it easier to buy better stuff"
     imgSrc={require('../img/dm.png')}
+    href={'https://www.digitalmarketplace.service.gov.uk/'}
+    alt="Screenshot of the Digital Marketplace"
   >
     <p>
       Between 2015 and 2017, I was part of the high-performing multidisciplinary

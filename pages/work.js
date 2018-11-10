@@ -1,26 +1,36 @@
 import Layout from '../components/layout'
-import Img from '../components/img'
+import Link from 'next/link'
 
 export default () => (
   <Layout title="work by paul craig">
     <h1>Work</h1>
-    <Img
-      src={require('../img/laiyuhsiang-146977-unsplash.jpg')}
-      alt="Tiger in the water"
-      title="Off to Bate Island"
-      year="2013"
-    />
-    <Img
-      src={require('../img/sacha-styles-549087-unsplash.jpg')}
-      alt="Tiger in the dark"
-      title="Before the fireworks"
-      year="2014"
-    />
-    <Img
-      src={require('../img/sander-wehkamp-579332-unsplash.jpg')}
-      alt="Tiger in the wild"
-      title="Fireworks 🎆"
-      year="2015"
-    />
+    <div>
+      <Link href="/blog">
+        <a>
+          <h2>GOV.UK Digital Marketplace</h2>
+          <h3>Making it easier to buy better stuff</h3>
+        </a>
+      </Link>
+    </div>
+
+    <div>
+      <h2>pcraig3.ca</h2>
+      <h3>Building a well-padded trophy case</h3>
+    </div>
+
+    <div>
+      <h2>westernusc.ca</h2>
+      <h3>Redesigning the University Students’ Council’s website</h3>
+    </div>
+
+    <div>
+      <h2>The Western USC Event Calendar</h2>
+      <h3>Connecting to Facebook for a super cool event listing</h3>
+    </div>
+
+    <div>
+      <h2>The Involvement Compass</h2>
+      <h3>Matching Western students to Western’s clubs</h3>
+    </div>
   </Layout>
 )

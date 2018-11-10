@@ -21,15 +21,11 @@ const contentStyles = css`
   margin-bottom: ${spacing.xl} !important;
 `
 
-export default ({ h1, h2, imgSrc, children }) => (
+export default ({ h1, h2, imgSrc, alt, href, children }) => (
   <Layout title={h1}>
     <h1>{h1}</h1>
     <h2 className={subheadStyles}>{h2}</h2>
-    <Img
-      src={imgSrc}
-      alt="Screenshot of the GOV.UK Digital Marketplace"
-      year="PLACEHOLDER"
-    />
+    <Img src={imgSrc} alt={alt} href={href} hoverText="VISIT" />
     <div className={contentStyles}>{children}</div>
     <div className={pointLeftJustifiedLinks}>
       <Link href="/work">
