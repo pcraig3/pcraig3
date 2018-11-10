@@ -65,9 +65,7 @@ export default () => (
   <div className={logoStyles}>
     <Link href="/">
       <a>
-        <span>paul</span>
-        <br />
-        <span>craig</span>
+        <span>pcraig3</span>
       </a>
     </Link>
   </div>

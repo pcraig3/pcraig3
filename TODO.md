@@ -1,8 +1,8 @@
 # to do
 
-- publish to gh pages
 - add blog post template
 - work not portfolio
+- cursor hover state for portfolio images
 - add blog post list template
 - optimize images somehow
 - add real images
@@ -10,6 +10,7 @@
 
 # done
 
+- ✅ publish to gh pages
 - ✅ fix for (potentially) low-contrast image captions
 - ✅ axe scan
 - ✅ check if header tags are being inserted more than once

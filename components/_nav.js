@@ -137,7 +137,7 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
 const NavLink = ({ path, pathname }) => (
   <Link href={`${path}`}>
     <a {...(path === pathname ? { 'aria-current': 'page' } : {})}>
-      {path === '/' ? 'Home' : path.split('/').pop()}
+      {path === '/' ? 'home' : path.split('/').pop()}
     </a>
   </Link>
 )

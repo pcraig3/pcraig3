@@ -41,12 +41,14 @@ export default () => (
       <span>GitHub</span>
       <span>
         <Link href="https://www.github.com/pcraig3">
-          <a title="pls star me">pcraig3</a>
+          <a title="pls ⭐ me">pcraig3</a>
         </Link>
       </span>
     </p>
     <p>
-      <span>Facebook(?)</span>
+      <span>
+        Facebook (if you <em>must</em>. 🤷)
+      </span>
       <span>
         <Link href="https://www.facebook.com/PaulMCraig">
           <a title="pls be my friend">PaulMCraig</a>
