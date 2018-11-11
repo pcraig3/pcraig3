@@ -1,36 +1,28 @@
-import Layout from '../components/layout'
+import { css } from 'react-emotion'
 import Link from 'next/link'
+import Layout from '../components/layout'
+import WorkLink from '../components/workLink'
 
 export default () => (
   <Layout title="work by">
     <h1>Work</h1>
-    <div>
-      <Link href="/govuk-digital-marketplace">
-        <a>
-          <h2>GOV.UK Digital Marketplace</h2>
-          <h3>Making it easier to buy better stuff</h3>
-        </a>
-      </Link>
-    </div>
 
-    <div>
-      <h2>pcraig3.ca</h2>
-      <h3>Building a well-padded trophy case</h3>
-    </div>
-
-    <div>
-      <h2>westernusc.ca</h2>
-      <h3>Redesigning the University Students’ Council’s website</h3>
-    </div>
-
-    <div>
-      <h2>The Western USC Event Calendar</h2>
-      <h3>Connecting to Facebook for a super cool event listing</h3>
-    </div>
-
-    <div>
-      <h2>The Involvement Compass</h2>
-      <h3>Matching Western students to Western’s clubs</h3>
-    </div>
+    <WorkLink
+      h2="GOV.UK Digital Marketplace"
+      subheading="Making it easier to buy better stuff"
+    />
+    <WorkLink h2="pcraig3.ca" subheading="Building a well-padded trophy case" />
+    <WorkLink
+      h2="westernusc.ca"
+      subheading="Redesigning the University Students’ Council’s website"
+    />
+    <WorkLink
+      h2="The Western USC Event Calendar"
+      subheading="Connecting to Facebook for a super cool event listing"
+    />
+    <WorkLink
+      h2="The Involvement Compass"
+      subheading="Matching Western students to Western’s clubs"
+    />
   </Layout>
 )

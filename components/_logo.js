@@ -21,7 +21,7 @@ const logoStyles = css`
     position: static;
     bottom: initial;
     left: initial;
-    margin-bottom: ${spacing.xl};
+    margin-bottom: ${spacing.xxl};
 
     .show-menu & {
       display: inline-block;

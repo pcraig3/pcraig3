@@ -84,7 +84,7 @@ export const typograpyStyles = css`
     font-weight: 600;
   }
   h1 {
-    margin-bottom: ${spacing.xl};
+    margin-bottom: ${spacing.xxl};
   }
   h2 {
     margin-bottom: ${spacing.md};

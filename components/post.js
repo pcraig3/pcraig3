@@ -10,7 +10,7 @@ import {
 } from '../components/__styles'
 
 const subheadStyles = css`
-  margin-top: -${spacing.lg};
+  margin-top: calc(-${spacing.lg} - ${spacing.md});
   margin-bottom: ${spacing.xl};
 
   text-transform: uppercase;
