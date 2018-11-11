@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
 import Link from 'next/link'
 import { fontSizes, mq, spacing } from '../components/__styles'
@@ -38,7 +39,7 @@ const workLinkStyles = css`
   }
 `
 
-export default ({ h2, subheading, href = '/govuk-digital-marketplace' }) => (
+const WorkLink = ({ h2, subheading, href = '/govuk-digital-marketplace' }) => (
   <div className={workLinkStyles}>
     <Link href={href}>
       <a>
@@ -48,3 +49,11 @@ export default ({ h2, subheading, href = '/govuk-digital-marketplace' }) => (
     </Link>
   </div>
 )
+
+WorkLink.propTypes = {
+  h2: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
+  href: PropTypes.string,
+}
+
+export default WorkLink

@@ -4,11 +4,11 @@
 - add a second post
 - add an about page
 - add images
-- react prop types
 - pally scan
 
 # done
 
+- ✅ react prop types
 - ✅ add linting
 - ✅ clean up the current post
 - ✅ add blog post list template

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
 import { spacing, colours, mq } from './__styles'
 
@@ -93,6 +94,12 @@ const Figure = ({ src, alt, hoverText }) => (
   </figure>
 )
 
+Figure.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  hoverText: PropTypes.string,
+}
+
 const imgWrapperStyles = css`
   margin-bottom: ${spacing.xl} !important;
   }
@@ -100,7 +107,7 @@ const imgWrapperStyles = css`
   a:focus figure { ${_hoverImg}; }
 `
 
-export default ({ href, ...props }) => (
+const Img = ({ href, ...props }) => (
   <div className={imgWrapperStyles}>
     {href ? (
       <a href={href} target="_blank">
@@ -111,3 +118,9 @@ export default ({ href, ...props }) => (
     )}
   </div>
 )
+
+Img.propTypes = {
+  href: PropTypes.string,
+}
+
+export default Img

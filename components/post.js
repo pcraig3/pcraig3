@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
 import Link from 'next/link'
 import Layout from './layout'
-import Img from './img'
+import Img from './_img'
 import {
   fontSizes,
   spacing,
@@ -20,13 +21,22 @@ const contentStyles = css`
   margin-bottom: ${spacing.xl} !important;
 `
 
-export default ({ h1, h2, title, imgSrc, alt, href, hoverText, children }) => (
+const Post = ({
+  h1,
+  subheading,
+  title,
+  imgSrc,
+  imgAlt,
+  href,
+  hoverText,
+  children,
+}) => (
   <Layout title={title || h1}>
     <h1>{h1}</h1>
-    <h2 className={subheadStyles}>{h2}</h2>
+    <h2 className={subheadStyles}>{subheading}</h2>
     <Img
       src={imgSrc}
-      alt={alt}
+      alt={imgAlt}
       href={href}
       hoverText={hoverText || 'VISIT  ☞'}
     />
@@ -38,3 +48,16 @@ export default ({ h1, h2, title, imgSrc, alt, href, hoverText, children }) => (
     </div>
   </Layout>
 )
+
+Post.propTypes = {
+  h1: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+  subheading: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  imgSrc: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  hoverText: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
+}
+
+export default Post

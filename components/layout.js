@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import { css, injectGlobal } from 'react-emotion'
@@ -120,6 +121,14 @@ Layout.defaultProps = {
   className: css``,
   url: {},
   h1: null,
+}
+
+Layout.propTypes = {
+  h1: PropTypes.string,
+  title: PropTypes.string,
+  className: PropTypes.string,
+  children: PropTypes.array.isRequired,
+  router: PropTypes.object.isRequired,
 }
 
 export default withRouter(Layout)

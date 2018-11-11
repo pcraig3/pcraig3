@@ -7,11 +7,11 @@ export default () => (
         GOV.UK<br />Digital Marketplace
       </span>
     }
-    h2="Making it easier to buy better stuff"
+    subheading="Making it easier to buy better stuff"
     title="GOV.UK Digital Marketplace —"
     imgSrc={require('../img/dm.png')}
+    imgAlt="Screenshot of the Digital Marketplace"
     href={'https://www.digitalmarketplace.service.gov.uk/'}
-    alt="Screenshot of the Digital Marketplace"
   >
     <p>
       Between 2015 and 2017, I was part of the high-performing multidisciplinary

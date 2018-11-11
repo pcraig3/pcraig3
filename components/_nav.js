@@ -1,5 +1,6 @@
-import Link from 'next/link'
+import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
+import Link from 'next/link'
 import {
   bisqueLinks,
   colours,
@@ -133,6 +134,14 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
   )
 }
 
+const toggleButtonProps = {
+  onToggle: PropTypes.func.isRequired,
+  showMenu: PropTypes.bool.isRequired,
+  pathname: PropTypes.string.isRequired,
+}
+
+ToggleButton.propTypes = toggleButtonProps
+
 const NavLink = ({ path, pathname }) => (
   <Link href={`${path}`}>
     <a {...(path === pathname ? { 'aria-current': 'page' } : {})}>
@@ -141,7 +150,12 @@ const NavLink = ({ path, pathname }) => (
   </Link>
 )
 
-export default ({ onToggle, showMenu, pathname }) => (
+NavLink.propTypes = {
+  path: PropTypes.string.isRequired,
+  pathname: PropTypes.string.isRequired,
+}
+
+const Nav = ({ onToggle, showMenu, pathname }) => (
   <nav className={navStyles}>
     <ToggleButton onToggle={onToggle} showMenu={showMenu} pathname={pathname} />
     <div className={divStyles} id="navLinks">
@@ -152,3 +166,7 @@ export default ({ onToggle, showMenu, pathname }) => (
     </div>
   </nav>
 )
+
+Nav.propTypes = toggleButtonProps
+
+export default Nav
