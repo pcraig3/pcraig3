@@ -82,7 +82,7 @@ class Layout extends Component {
         `}`}
       >
         <Head>
-          <title>{title}</title>
+          <title>{title ? `${title} paul craig` : 'paul craig'}</title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"
@@ -116,7 +116,7 @@ class Layout extends Component {
 
 Layout.defaultProps = {
   children: {},
-  title: 'p craig 3 dot CA',
+  title: null,
   className: css``,
   url: {},
   h1: null,

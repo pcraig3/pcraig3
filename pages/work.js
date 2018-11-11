@@ -2,10 +2,10 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 
 export default () => (
-  <Layout title="work by paul craig">
+  <Layout title="work by">
     <h1>Work</h1>
     <div>
-      <Link href="/blog">
+      <Link href="/govuk-digital-marketplace">
         <a>
           <h2>GOV.UK Digital Marketplace</h2>
           <h3>Making it easier to buy better stuff</h3>

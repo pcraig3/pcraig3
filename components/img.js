@@ -87,7 +87,7 @@ const captionStyles = css`
 const Figure = ({ src, alt, hoverText }) => (
   <figure className={imgStyles}>
     <figcaption className={captionStyles}>
-      {hoverText ? <div>{hoverText} ☞</div> : null}
+      {hoverText ? <div>{hoverText}</div> : null}
     </figcaption>
     <img src={`${src}`} alt={alt} />
   </figure>
