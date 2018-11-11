@@ -1,16 +1,17 @@
 # to do
-- clean up the current post
-- add blog post list template
+
 - do a little mobile run-through
 - add a second post
 - add an about page
 - add images
 - react prop types
-- add linting
 - pally scan
 
 # done
 
+- ✅ add linting
+- ✅ clean up the current post
+- ✅ add blog post list template
 - ✅ add readme to gh-pages export
 - ✅ images are also links
 - ✅ add blog post template

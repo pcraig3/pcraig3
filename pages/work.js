@@ -1,5 +1,3 @@
-import { css } from 'react-emotion'
-import Link from 'next/link'
 import Layout from '../components/layout'
 import WorkLink from '../components/workLink'
 

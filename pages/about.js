@@ -1,5 +1,4 @@
 import Layout from '../components/layout'
-import { withRouter } from 'next/router'
 
 export default () => (
   <Layout title="about paul craig" h1="About">

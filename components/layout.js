@@ -13,7 +13,7 @@ import {
 import Logo from './_logo'
 import Nav from './_nav'
 
-const globalStyles = injectGlobal`
+injectGlobal`
   html {
     font-family: 'Gothic A1', sans-serif;
     overflow-y: scroll;
@@ -60,7 +60,7 @@ class Layout extends Component {
     this.state = { showMenu: this.props.router.query.showMenu === 'true' }
   }
 
-  onToggle(e) {
+  onToggle() {
     this.setState(prevState => {
       return { showMenu: !prevState.showMenu }
     })

@@ -4,7 +4,6 @@ import Layout from './layout'
 import Img from './img'
 import {
   fontSizes,
-  mq,
   spacing,
   pointLeftJustifiedLinks,
 } from '../components/__styles'
