@@ -9,7 +9,6 @@ import {
   layoutStyles,
   headerStyles,
   mainStyles,
-  visuallyhidden,
 } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
@@ -73,7 +72,6 @@ class Layout extends Component {
       title,
       className,
       router: { query, pathname },
-      h1,
     } = this.props
     return (
       <div
@@ -107,7 +105,6 @@ class Layout extends Component {
             ${mainStyles} ${className};
           `}
         >
-          {h1 ? <h1 className={visuallyhidden}>{h1}</h1> : null}
           {children}
         </main>
       </div>
@@ -120,11 +117,9 @@ Layout.defaultProps = {
   title: null,
   className: css``,
   url: {},
-  h1: null,
 }
 
 Layout.propTypes = {
-  h1: PropTypes.string,
   title: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.array.isRequired,

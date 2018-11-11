@@ -42,8 +42,13 @@ const imgStyles = css`
   padding: ${spacing.sm};
   position: relative;
 
+  width: calc(100% + ${spacing.md});
+  margin-left: -${spacing.sm};
+
   ${mq.xs(css`
     padding: 20px;
+    width: auto;
+    margin-left: 0;
   `)};
 
   img {
@@ -101,10 +106,15 @@ Figure.propTypes = {
 }
 
 const imgWrapperStyles = css`
-  margin-bottom: ${spacing.xl} !important;
-  }
+  margin-bottom: ${spacing.lg} !important;
 
-  a:focus figure { ${_hoverImg}; }
+  ${mq.xs(css`
+    margin-bottom: ${spacing.xl} !important;
+  `)};
+
+  a:focus figure {
+    ${_hoverImg};
+  }
 `
 
 const Img = ({ href, ...props }) => (

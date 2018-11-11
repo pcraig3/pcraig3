@@ -6,19 +6,29 @@ import Img from './_img'
 import {
   fontSizes,
   spacing,
+  mq,
   pointLeftJustifiedLinks,
 } from '../components/__styles'
 
 const subheadStyles = css`
-  margin-top: calc(-${spacing.lg} - ${spacing.md});
-  margin-bottom: ${spacing.xl};
+  margin-top: calc(-${spacing.lg} - ${spacing.lg});
+  margin-bottom: ${spacing.lg};
 
   text-transform: uppercase;
   font-size: ${fontSizes.md}rem;
+
+  ${mq.xs(css`
+    margin-top: calc(-${spacing.lg} - ${spacing.md});
+    margin-bottom: ${spacing.xl};
+  `)};
 `
 
 const contentStyles = css`
-  margin-bottom: ${spacing.xl} !important;
+  margin-bottom: ${spacing.lg} !important;
+
+  ${mq.xs(css`
+    margin-bottom: ${spacing.xl} !important;
+  `)};
 `
 
 const Post = ({

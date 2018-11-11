@@ -22,8 +22,8 @@ export default () => (
       for the{' '}
       <a href="https://gds.blog.gov.uk/about/" target="_blank">
         Government Digital Service
-      </a>. The Marketplace is an interface between public sector buyers and
-      private sector suppliers: buyers can get off-the-shelf cloud commodity
+      </a>. The Marketplace is an interface between public-sector buyers and
+      private-sector suppliers. Buyers can get off-the-shelf cloud commodity
       products (like{' '}
       <a
         href="https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=amazon+web+services+cloud+hosting"
@@ -36,7 +36,7 @@ export default () => (
         href="https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=cyber+digital+cloud"
         target="_blank"
       >
-        whatever else
+        whatever
       </a>), as well as put out{' '}
       <a
         href="https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities"

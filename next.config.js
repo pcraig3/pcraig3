@@ -18,8 +18,11 @@ module.exports = withOptimizedImages({
       '/m/work': { page: '/work', query: { showMenu: 'true' } },
       '/typography': { page: '/typography' },
       '/m/typography': { page: '/typography', query: { showMenu: 'true' } },
-      '/blog': { page: '/blog' },
-      '/m/blog': { page: '/blog', query: { showMenu: 'true' } },
+      '/govuk-digital-marketplace': { page: '/govuk-digital-marketplace' },
+      '/m/govuk-digital-marketplace': {
+        page: '/govuk-digital-marketplace',
+        query: { showMenu: 'true' },
+      },
     }
   },
 })

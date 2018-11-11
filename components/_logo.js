@@ -22,6 +22,8 @@ const logoStyles = css`
     bottom: initial;
     left: initial;
     margin-bottom: ${spacing.xxl};
+    /* push the logo down so it lines up with H1s */
+    margin-top: ${spacing.sm};
 
     .show-menu & {
       display: inline-block;
