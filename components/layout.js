@@ -32,7 +32,6 @@ injectGlobal`
   a,
   a:visited,
   button {
-    display: inline-block;
     text-decoration: none;
     color: ${colours.primary};
   }

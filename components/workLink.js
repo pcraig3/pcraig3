@@ -22,6 +22,7 @@ const workLinkStyles = css`
   }
 
   a {
+    display: inline-block;
     padding: ${spacing.xxs};
     margin-left: -${spacing.xxs};
 

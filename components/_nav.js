@@ -52,6 +52,7 @@ const divStyles = css`
 
   a {
     overflow: hidden;
+    display: inline-block;
 
     &:not(:last-of-type) {
       margin-bottom: ${spacing.xxs};

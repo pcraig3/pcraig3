@@ -22,7 +22,8 @@ export default () => (
     />
     <WorkLink
       h2="The Western USC Event Calendar"
-      subheading="Connecting to Facebook for a super cool event listing"
+      subheading="Building the best calendar in the country"
+      href="/work-westernuscca-event-calendar"
     />
     <WorkLink
       h2="The Involvement Compass"
