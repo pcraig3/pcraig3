@@ -39,7 +39,6 @@ const Post = ({
   imgAlt,
   href,
   linkText,
-  hoverText,
   children,
 }) => (
   <Layout title={title || h1}>
@@ -50,7 +49,7 @@ const Post = ({
       alt={imgAlt}
       href={href}
       linkText={linkText}
-      hoverText={hoverText || 'VISIT  ☞'}
+      hoverText={href ? 'VISIT ☞' : 'ARCHIVED ☠'}
     />
     <div className={contentStyles}>{children}</div>
     <div className={pointLeftJustifiedLinks}>
@@ -67,9 +66,8 @@ Post.propTypes = {
   title: PropTypes.string,
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired,
-  hoverText: PropTypes.string,
+  href: PropTypes.string,
+  linkText: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
 }
 

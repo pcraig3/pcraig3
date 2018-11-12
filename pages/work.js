@@ -17,7 +17,8 @@ export default () => (
     />
     <WorkLink
       h2="westernusc.ca"
-      subheading="Redesigning the University Students’ Council’s website"
+      subheading="Renewing the University Students’ Council website"
+      href="/work-westernuscca"
     />
     <WorkLink
       h2="The Western USC Event Calendar"

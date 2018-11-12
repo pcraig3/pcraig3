@@ -117,8 +117,18 @@ const imgWrapperStyles = css`
   }
 `
 
+const hoverArchivedImg = css`
+  :hover figcaption {
+    cursor: not-allowed;
+  }
+`
+
 const Img = ({ href, linkText, ...props }) => (
-  <div className={imgWrapperStyles}>
+  <div
+    className={
+      href ? imgWrapperStyles : `${imgWrapperStyles} ${hoverArchivedImg}`
+    }
+  >
     {href ? (
       <a href={href} target="_blank">
         {linkText ? <span className={visuallyhidden}>{linkText}</span> : null}
