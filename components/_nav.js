@@ -73,7 +73,7 @@ const buttonStyles = css`
   cursor: pointer;
   margin-left: ${spacing.md};
   padding: 0 ${spacing.xxs};
-  width: 30px;
+  width: 75px;
   text-align: center;
   border: 2px solid ${colours.secondary};
 
@@ -83,27 +83,12 @@ const buttonStyles = css`
     outline: 2px solid ${colours.focus};
   }
 
-  ${mq.xs(css`
-    width: 75px;
-  `)};
-
   ${mq.sm(css`
     display: none;
   `)};
 
   span {
     padding: 0;
-  }
-
-  span > span {
-    display: none;
-    padding: 0;
-    margin: 0;
-    ${bisqueLinks};
-
-    ${mq.xs(css`
-      display: initial;
-    `)};
   }
 `
 
@@ -123,13 +108,7 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
         aria-expanded={showMenu}
         aria-label="Toggle navigation"
       >
-        {showMenu ? (
-          <span>x</span>
-        ) : (
-          <span>
-            m<span>enu</span>
-          </span>
-        )}
+        {showMenu ? <span>x</span> : <span>menu</span>}
       </button>
     </form>
   )
