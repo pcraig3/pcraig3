@@ -1,6 +1,6 @@
 {
   "name": "pcraig3",
-  "version": "1.0.0",
+  "version": "0.9.9",
   "description": "portfolio site (reboot) for paul craig",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "pcraig3",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel-plugin-emotion": "^9.2.11",
     "emotion": "^9.2.12",

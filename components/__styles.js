@@ -227,6 +227,7 @@ export const layoutStyles = css`
 
   ${mq.md(css`
     margin: ${spacing.xl};
+    margin-bottom: ${spacing.md};
   `)};
 `
 
@@ -263,7 +264,7 @@ export const headerStyles = css`
 export const mainStyles = css`
   flex: 4;
   margin-right: 0;
-  margin-bottom: ${spacing.md};
+  margin-bottom: ${spacing.xl};
 
   ${mq.sm(css`
     margin-right: ${spacing.xs};

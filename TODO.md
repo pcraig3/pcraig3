@@ -1,13 +1,13 @@
 # to do
 
-- do a little mobile run-through
 - add a second post
-- add an about page
 - add images
 - pally scan
 
 # done
 
+- ✅ add an about page
+- ✅ do a little mobile run-through
 - ✅ react prop types
 - ✅ add linting
 - ✅ clean up the current post
