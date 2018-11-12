@@ -11,12 +11,24 @@ const mainStyles = css`
   `)};
 `
 
+const wavingHand = css`
+  display: inline-block;
+  animation: wave 0.3s ease-in-out 0.8s 5;
+  transform-origin: center bottom;
+
+  @keyframes wave {
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+`
+
 export default () => (
   <Layout className={mainStyles}>
     <h1 className={visuallyhidden}>Welcome to Paul Craig’s dumb website</h1>
     <p>
       Hi there.{' '}
-      <span role="img" aria-label="Waving hand">
+      <span role="img" aria-label="Waving hand" className={wavingHand}>
         👋
       </span>
     </p>
