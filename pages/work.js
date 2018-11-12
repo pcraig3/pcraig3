@@ -28,6 +28,7 @@ export default () => (
     <WorkLink
       h2="The Involvement Compass"
       subheading="Matching Western students to Western’s clubs"
+      href="/work-involvement-compass"
     />
   </Layout>
 )
