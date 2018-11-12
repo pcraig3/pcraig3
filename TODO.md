@@ -1,6 +1,5 @@
 # to do
 
-- work: pcraig3
 - work: westernusc
 - work: event calendar
 - work: involvement compass
@@ -12,6 +11,8 @@
 
 # done
 
+- work
+    - ✅ pcraig3
 - ✅ add images
 - ✅ add an about page
 - ✅ do a little mobile run-through

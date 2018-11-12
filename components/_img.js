@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
-import { spacing, colours, mq } from './__styles'
+import { colours, mq, spacing, visuallyhidden } from './__styles'
 
 const _hoverImg = css`
   background-color: #ffe4c4; /* can't use colours here because they get distorted */
@@ -117,10 +117,11 @@ const imgWrapperStyles = css`
   }
 `
 
-const Img = ({ href, ...props }) => (
+const Img = ({ href, linkText, ...props }) => (
   <div className={imgWrapperStyles}>
     {href ? (
       <a href={href} target="_blank">
+        {linkText ? <span className={visuallyhidden}>{linkText}</span> : null}
         <Figure {...props} />
       </a>
     ) : (
@@ -131,6 +132,7 @@ const Img = ({ href, ...props }) => (
 
 Img.propTypes = {
   href: PropTypes.string,
+  linkText: PropTypes.string,
 }
 
 export default Img

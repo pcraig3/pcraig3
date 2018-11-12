@@ -38,6 +38,7 @@ const Post = ({
   imgSrc,
   imgAlt,
   href,
+  linkText,
   hoverText,
   children,
 }) => (
@@ -48,6 +49,7 @@ const Post = ({
       src={imgSrc}
       alt={imgAlt}
       href={href}
+      linkText={linkText}
       hoverText={hoverText || 'VISIT  ☞'}
     />
     <div className={contentStyles}>{children}</div>
@@ -66,6 +68,7 @@ Post.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   imgAlt: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
   hoverText: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
 }

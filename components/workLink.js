@@ -39,7 +39,11 @@ const workLinkStyles = css`
   }
 `
 
-const WorkLink = ({ h2, subheading, href = '/govuk-digital-marketplace' }) => (
+const WorkLink = ({
+  h2,
+  subheading,
+  href = '/work-govuk-digital-marketplace',
+}) => (
   <div className={workLinkStyles}>
     <Link href={href}>
       <a>

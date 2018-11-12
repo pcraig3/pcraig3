@@ -42,6 +42,11 @@ injectGlobal`
     height: auto;
   }
 
+  ::selection {
+    color: black;
+    background: ${colours.tertiary};
+  }
+
   ${typograpyStyles};
 `
 

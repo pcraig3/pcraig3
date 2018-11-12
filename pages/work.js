@@ -8,8 +8,13 @@ export default () => (
     <WorkLink
       h2="GOV.UK Digital Marketplace"
       subheading="Making it easier to buy better stuff"
+      href="/work-govuk-digital-marketplace"
     />
-    <WorkLink h2="pcraig3.ca" subheading="Building a well-padded trophy case" />
+    <WorkLink
+      h2="pcraig3.ca (deprecated)"
+      subheading="Building a well-padded trophy case"
+      href="/work-pcraig3ca-deprecated"
+    />
     <WorkLink
       h2="westernusc.ca"
       subheading="Redesigning the University Students’ Council’s website"

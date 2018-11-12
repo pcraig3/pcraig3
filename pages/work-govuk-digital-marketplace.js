@@ -11,6 +11,7 @@ export default () => (
     title="GOV.UK Digital Marketplace —"
     imgSrc={require('../img/dm.png')}
     imgAlt="Screenshot of the Digital Marketplace"
+    linkText="The Digital Marketplace"
     href={'https://www.digitalmarketplace.service.gov.uk/'}
   >
     <p>
