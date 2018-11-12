@@ -1,11 +1,18 @@
 # to do
 
-- add a second post
-- add images
+- work: pcraig3
+- work: westernusc
+- work: event calendar
+- work: involvement compass
+- work: performance platform
+- work: rescheduler
+- page: things i like
+- page: thinks i dont like
 - pally scan
 
 # done
 
+- ✅ add images
 - ✅ add an about page
 - ✅ do a little mobile run-through
 - ✅ react prop types
