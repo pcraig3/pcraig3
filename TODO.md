@@ -1,9 +1,5 @@
 # to do
 
-- work: westernusc
-- work: event calendar
-- work: involvement compass
-- work: performance platform
 - work: rescheduler
 - page: things i like
 - page: thinks i dont like
@@ -13,6 +9,10 @@
 
 - work
     - ✅ pcraig3
+    - ✅ westernusc
+    - ✅ event calendar
+    - ✅ involvement compass
+    - ✅ performance platform
 - ✅ add images
 - ✅ add an about page
 - ✅ do a little mobile run-through

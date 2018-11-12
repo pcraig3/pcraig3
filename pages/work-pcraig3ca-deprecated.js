@@ -2,7 +2,7 @@ import Post from '../components/post'
 
 export default () => (
   <Post
-    h1="pcraig3.ca (deprecated)"
+    h1="pcraig3.ca"
     subheading="Building a well-padded trophy case"
     title="pcraig3.ca (deprecated) —"
     imgSrc={require('../img/p2.png')}

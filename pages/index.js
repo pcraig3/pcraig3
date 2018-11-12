@@ -13,7 +13,7 @@ const mainStyles = css`
 
 export default () => (
   <Layout className={mainStyles}>
-    <h1 className={visuallyhidden}>Welcome to Paul Craig's dumb website</h1>
+    <h1 className={visuallyhidden}>Welcome to Paul Craig’s dumb website</h1>
     <p>
       Hi there.{' '}
       <span role="img" aria-label="Waving hand">
