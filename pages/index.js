@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import { visuallyhidden } from '../components/__styles'
+import RandomEmoji from '../components/randomEmoji'
 import Link from 'next/link'
 
 export default () => (
@@ -24,7 +25,9 @@ export default () => (
           pumpkins
         </a>
       </li>
-      <li aria-hidden="true">🐙</li>
+      <li aria-hidden="true">
+        <RandomEmoji />
+      </li>
     </ul>
   </Layout>
 )
