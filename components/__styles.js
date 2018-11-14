@@ -37,17 +37,6 @@ const breakpoints = {
   xl: 1200,
 }
 
-export const visuallyhidden = css`
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-`
-
 export const mq = Object.keys(breakpoints).reduce((accumulator, label) => {
   let prefix = typeof breakpoints[label] === 'string' ? '' : 'min-width:'
   let suffix = typeof breakpoints[label] === 'string' ? '' : 'px'
@@ -59,6 +48,37 @@ export const mq = Object.keys(breakpoints).reduce((accumulator, label) => {
     `
   return accumulator
 }, {})
+
+export const visuallyhidden = css`
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+`
+
+export const _visuallyhiddenReset = css`
+  border: initial;
+  clip: initial;
+  height: auto;
+  margin: initial;
+  overflow: initial;
+  padding: initial;
+  position: initial;
+  width: auto;
+`
+
+export const visuallyHiddenParagraphXXS = css`
+  ${visuallyhidden};
+
+  ${mq.xxs(css`
+    ${_visuallyhiddenReset};
+    margin-bottom: ${spacing.md};
+  `)};
+`
 
 export const typograpyStyles = css`
   html {
