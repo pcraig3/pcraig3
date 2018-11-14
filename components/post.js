@@ -1,14 +1,9 @@
 import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
-import Link from 'next/link'
 import Layout from './layout'
 import Img from './_img'
-import {
-  fontSizes,
-  spacing,
-  mq,
-  pointLeftJustifiedLinks,
-} from '../components/__styles'
+import BackLink from './backLink'
+import { fontSizes, spacing, mq } from './__styles'
 
 const subheadStyles = css`
   margin-top: calc(-${spacing.lg} - ${spacing.lg});
@@ -52,11 +47,7 @@ const Post = ({
       hoverText={href ? 'VISIT ☞' : 'ARCHIVED ☠'}
     />
     <div className={contentStyles}>{children}</div>
-    <div className={pointLeftJustifiedLinks}>
-      <Link href="/work">
-        <a>Back to /work</a>
-      </Link>
-    </div>
+    <BackLink href="/work" />
   </Layout>
 )
 

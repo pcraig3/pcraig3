@@ -41,10 +41,6 @@ export default () => (
       projects, how to extend Already-Existing software, and how little I
       actually need a web presence.
     </p>
-    <p>
-      <span role="img" aria-label="Face with tongue">
-        😛
-      </span>
-    </p>
+    <p aria-hidden="true">😛</p>
   </Post>
 )
