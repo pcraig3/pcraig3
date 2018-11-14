@@ -52,6 +52,6 @@ export default () => (
       <li>A hot cup of (Earl Grey) tea on a rainy day</li>
     </ul>
 
-    <BackLink />
+    <BackLink href="/lists" />
   </Layout>
 )

@@ -3,9 +3,17 @@ import { css } from 'react-emotion'
 import Link from 'next/link'
 import { fontSizes, mq, spacing } from '../components/__styles'
 
-const workLinkStyles = css`
+export const lineListsLeft = css`
+  ul,
+  ol {
+    margin-left: 0;
+  }
+`
+
+const listLinkStyles = css`
   /* Removing some margin to make up for the padding on the links */
   margin-bottom: calc(${spacing.xl} - 10px) !important;
+  list-style: none;
 
   h2 {
     font-size: ${fontSizes.md}rem;
@@ -40,25 +48,21 @@ const workLinkStyles = css`
   }
 `
 
-const WorkLink = ({
-  h2,
-  subheading,
-  href = '/work-govuk-digital-marketplace',
-}) => (
-  <div className={workLinkStyles}>
+const ListLink = ({ h2, subheading, href }) => (
+  <li className={listLinkStyles}>
     <Link href={href}>
       <a>
         <h2>{h2}</h2>
-        <p>{subheading}</p>
+        {subheading ? <p>{subheading}</p> : null}
       </a>
     </Link>
-  </div>
+  </li>
 )
 
-WorkLink.propTypes = {
+ListLink.propTypes = {
   h2: PropTypes.string.isRequired,
-  subheading: PropTypes.string.isRequired,
+  subheading: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   href: PropTypes.string,
 }
 
-export default WorkLink
+export default ListLink

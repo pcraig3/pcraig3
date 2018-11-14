@@ -33,6 +33,6 @@ export default () => (
         Biting February wind <span aria-hidden="true">🌬️</span>
       </li>
     </ul>
-    <BackLink />
+    <BackLink href="/lists" />
   </Layout>
 )

@@ -15,7 +15,12 @@ export default () => (
           <a>websites</a>
         </Link>
       </li>
-      <li>makes lists</li>
+      <li>
+        makes{' '}
+        <Link href="/lists">
+          <a>lists</a>
+        </Link>
+      </li>
       <li>
         knifes{' '}
         <a
