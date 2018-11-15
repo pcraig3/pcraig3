@@ -14,6 +14,9 @@ echo "-- Creating a local README file"
 echo "This branch contains only the static HTML export files." > ./out/README.md
 echo "You probably want to check out [the dev branch](https://github.com/pcraig3/pcraig3.github.io/tree/dev) instead." >> ./out/README.md
 
+echo "-- Creating a CNAME file so my custom domain still works"
+echo "pcraig3.ca" > ./out/CNAME
+
 git add .
 git commit -m "build and export static html files"
 
