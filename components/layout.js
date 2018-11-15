@@ -12,6 +12,7 @@ import {
 } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
+import { initGA, logPageView } from '../utils/analytics'
 
 injectGlobal`
   html {
@@ -68,6 +69,18 @@ class Layout extends Component {
     this.setState(prevState => {
       return { showMenu: !prevState.showMenu }
     })
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line no-undef
+    if (process.env.NODE_ENV === 'production') {
+      if (window && !window.GA_INITIALIZED) {
+        // eslint-disable-next-line no-undef
+        initGA(process.env.RAZZLE_GA_ID)
+        window.GA_INITIALIZED = true
+      }
+      logPageView()
+    }
   }
 
   render() {
