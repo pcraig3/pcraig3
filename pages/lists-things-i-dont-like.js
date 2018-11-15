@@ -3,10 +3,10 @@ import BackLink from '../components/backLink'
 
 export default () => (
   <Layout title="things not at all liked by">
-    <h1>Things I don't like</h1>
+    <h1>Things I don’t like</h1>
 
     <p>
-      Don't even get me <em>started</em>.
+      Don’t even get me <em>started</em>.
     </p>
 
     <ul>

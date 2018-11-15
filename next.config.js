@@ -6,6 +6,7 @@ const paths = [
   '/contact',
   '/typography',
   '/lists',
+  '/lists-places-ive-lived',
   '/lists-things-i-like',
   '/lists-things-i-dont-like',
   '/work',

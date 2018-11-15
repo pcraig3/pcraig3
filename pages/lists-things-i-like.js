@@ -14,12 +14,7 @@ export default () => (
 
     <ul>
       <li>falafel wrap chili sauce garlic sauce</li>
-      <li>americanos</li>
-      <li>
-        <a href={require('../img/snowstorm-aftermath-london-on.jpg')}>
-          w h i t e s p a c e
-        </a>
-      </li>
+      <li>Americanos</li>
       <li>Feminism</li>
       <li>APIs</li>
       <li>
@@ -27,10 +22,11 @@ export default () => (
           href="https://www.goodreads.com/book/show/56034.The_French_Lieutenant_s_Woman"
           target="_blank"
         >
-          The French Lieutenant's Woman by John Fowles
+          The French Lieutenant’s Woman by John Fowles
         </a>
       </li>
       <li>Version control</li>
+      <li>Techno shows</li>
       <li>Phở</li>
       <li>
         <a

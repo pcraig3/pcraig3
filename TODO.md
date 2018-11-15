@@ -1,9 +1,8 @@
 # to do
 
 - work: rescheduler
-- page: things i like
-- page: thinks i dont like
 - skip link
+- page: 404 page
 - see about google analytics
 - pally scan
 
@@ -15,6 +14,8 @@
     - ✅ event calendar
     - ✅ involvement compass
     - ✅ performance platform
+- ✅ page: things i like
+- ✅ page: things i dont like
 - ✅ add images
 - ✅ add an about page
 - ✅ do a little mobile run-through
