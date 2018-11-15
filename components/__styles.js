@@ -83,13 +83,14 @@ export const visuallyHiddenParagraphXXS = css`
 export const typograpyStyles = css`
   html {
     font-size: 130%;
-    line-height: 1.25;
+    line-height: 1.3;
     ${mq.sm(css`
       font-size: 140%;
     `)};
 
     ${mq.md(css`
       font-size: 150%;
+      line-height: 1.25;
     `)};
   }
   body {
@@ -156,12 +157,17 @@ export const typograpyStyles = css`
   ol {
     margin-bottom: ${spacing.md};
     margin-left: 22px;
+
     ${mq.xs(css`
       margin-left: 0;
     `)};
 
     li {
-      margin-bottom: ${spacing.xxs};
+      margin-bottom: ${spacing.xs};
+
+      ${mq.md(css`
+        margin-bottom: ${spacing.xxs};
+      `)};
 
       &:last-child {
         margin-bottom: 0;
