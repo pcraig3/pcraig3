@@ -3,6 +3,7 @@
 - work: rescheduler
 - page: things i like
 - page: thinks i dont like
+- skip link
 - see about google analytics
 - pally scan
 

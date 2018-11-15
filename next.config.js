@@ -47,4 +47,9 @@ module.exports = withOptimizedImages({
 
   /* config for general next.js */
   exportPathMap: getPathExportMap,
+  /* only true on server */
+  /* https://github.com/zeit/next.js/tree/0d77dda28c8b0eaed38bb203de737ffc1235d42a#exposing-configuration-to-the-server--client-side */
+  serverRuntimeConfig: {
+    onServer: true,
+  },
 })

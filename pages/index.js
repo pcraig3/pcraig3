@@ -2,6 +2,8 @@ import Layout from '../components/layout'
 import { visuallyhidden } from '../components/__styles'
 import RandomEmoji from '../components/randomEmoji'
 import Link from 'next/link'
+import getConfig from 'next/config'
+const { serverRuntimeConfig } = getConfig()
 
 export default () => (
   <Layout>
@@ -22,7 +24,7 @@ export default () => (
         </Link>
       </li>
       <li>
-        knifes{' '}
+        stabs{' '}
         <a
           href="https://twitter.com/kyliehavelock/status/1055101613726097408"
           target="_blank"
@@ -30,9 +32,17 @@ export default () => (
           pumpkins
         </a>
       </li>
-      <li aria-hidden="true">
-        <RandomEmoji />
-      </li>
     </ul>
+    {serverRuntimeConfig.onServer ? (
+      <noscript>
+        <p aria-hidden="true">
+          <RandomEmoji />
+        </p>
+      </noscript>
+    ) : (
+      <p aria-hidden="true">
+        <RandomEmoji />
+      </p>
+    )}
   </Layout>
 )
