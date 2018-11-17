@@ -81,6 +81,19 @@ export const visuallyHiddenParagraphXXS = css`
   `)};
 `
 
+export const visuallyhiddenUntilFocus = css`
+  ${visuallyhidden};
+
+  :focus {
+    position: absolute;
+    clip: unset;
+    height: auto;
+    width: auto;
+    top: 4px;
+    left: 4px;
+  }
+`
+
 export const typograpyStyles = css`
   html {
     font-size: 130%;
@@ -252,6 +265,13 @@ export const layoutStyles = css`
   justify-content: flex-start;
   align-items: flex-start;
   margin: ${spacing.sm};
+
+  main,
+  footer {
+    &:focus {
+      outline: none;
+    }
+  }
 
   ${mq.xs(css`
     margin: ${spacing.md};

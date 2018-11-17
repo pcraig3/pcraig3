@@ -12,6 +12,7 @@ import {
 } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
+import SkipLink from './skipLink'
 import { initGA, logPageView } from '../utils/analytics'
 
 injectGlobal`
@@ -54,8 +55,8 @@ const outlineAll = function(outline) {
   return outline === undefined
     ? ``
     : !outline
-      ? `* { outline: 1px solid orange;}`
-      : `* { outline: 1px solid ${outline};}`
+      ? `* { outline: 2px solid orange;}`
+      : `* { outline: 2px solid ${outline};}`
 }
 
 class Layout extends Component {
@@ -105,7 +106,13 @@ class Layout extends Component {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
+        <SkipLink title={title} />
+
         <main
+          id="content"
+          name="content"
+          aria-label="Main content"
+          tabIndex={-1}
           className={css`
             ${mainStyles} ${className};
           `}
@@ -113,6 +120,10 @@ class Layout extends Component {
           {children}
         </main>
         <footer
+          id="footer"
+          name="footer"
+          tabIndex={-1}
+          aria-label="Main navigation"
           className={`${this.state.showMenu ? 'show-menu ' : 'hide-menu '}${css`
             ${footerStyles};
           `}`}

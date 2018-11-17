@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
-import { colours, mq, spacing, visuallyhidden } from './__styles'
+import { colours, fontSizes, mq, spacing } from './__styles'
 
 const _hoverImg = css`
   background-color: #ffe4c4; /* can't use colours here because they get distorted */
@@ -79,6 +79,7 @@ const captionStyles = css`
   > * {
     margin: 0 !important;
     display: inline-block;
+    font-size: ${fontSizes.md}rem;
     line-height: 0.9;
   }
 
@@ -112,6 +113,10 @@ const imgWrapperStyles = css`
     margin-bottom: ${spacing.xl} !important;
   `)};
 
+  a {
+    font-size: 0;
+  }
+
   a:focus figure {
     ${_hoverImg};
   }
@@ -130,10 +135,15 @@ const Img = ({ href, linkText, ...props }) => (
     }
   >
     {href ? (
-      <a href={href} target="_blank">
-        {linkText ? <span className={visuallyhidden}>{linkText}</span> : null}
-        <Figure {...props} />
-      </a>
+      linkText ? (
+        <a href={href} target="_blank" aria-label={linkText}>
+          <Figure {...props} />
+        </a>
+      ) : (
+        <a href={href} target="_blank">
+          <Figure {...props} />
+        </a>
+      )
     ) : (
       <Figure {...props} />
     )}

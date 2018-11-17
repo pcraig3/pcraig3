@@ -66,7 +66,7 @@ const logoStyles = css`
 export default () => (
   <div className={logoStyles}>
     <Link href="/">
-      <a>
+      <a aria-label="pcraig3.ca home page">
         <span>pcraig3</span>
       </a>
     </Link>
