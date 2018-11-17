@@ -7,7 +7,7 @@ import {
   colours,
   typograpyStyles,
   layoutStyles,
-  headerStyles,
+  footerStyles,
   mainStyles,
 } from './__styles'
 import Logo from './_logo'
@@ -105,9 +105,16 @@ class Layout extends Component {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <header
+        <main
+          className={css`
+            ${mainStyles} ${className};
+          `}
+        >
+          {children}
+        </main>
+        <footer
           className={`${this.state.showMenu ? 'show-menu ' : 'hide-menu '}${css`
-            ${headerStyles};
+            ${footerStyles};
           `}`}
         >
           <Logo />
@@ -116,14 +123,7 @@ class Layout extends Component {
             onToggle={this.onToggle}
             pathname={pathname}
           />
-        </header>
-        <main
-          className={css`
-            ${mainStyles} ${className};
-          `}
-        >
-          {children}
-        </main>
+        </footer>
       </div>
     )
   }

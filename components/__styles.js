@@ -7,7 +7,8 @@ export const fontSizes = {
   xs: 1 / (ratio * ratio),
   lg: 1 * ratio,
   xl: 1 * (ratio * ratio),
-  xxl: 1 * (ratio * ratio * ratio),
+  xxl: 2,
+  xxxl: 1 * (ratio * ratio * ratio),
 }
 
 export const spacingBase = 30
@@ -84,13 +85,18 @@ export const typograpyStyles = css`
   html {
     font-size: 130%;
     line-height: 1.3;
+
+    ${mq.xxs(css`
+      font-size: 145%;
+    `)};
+
     ${mq.sm(css`
-      font-size: 140%;
+      font-size: 155%;
+      line-height: 1.27;
     `)};
 
     ${mq.md(css`
-      font-size: 150%;
-      line-height: 1.25;
+      font-size: 165%;
     `)};
   }
   body {
@@ -109,7 +115,7 @@ export const typograpyStyles = css`
   }
   h2 {
     margin-bottom: ${spacing.md};
-    ${mq.xs(css`
+    ${mq.xxs(css`
       margin-top: ${spacing.xl};
     `)};
   }
@@ -123,8 +129,12 @@ export const typograpyStyles = css`
     font-size: ${fontSizes.xl}rem;
     line-height: 1.05;
 
-    ${mq.xs(css`
+    ${mq.xxs(css`
       font-size: ${fontSizes.xxl}rem;
+    `)};
+
+    ${mq.xs(css`
+      font-size: ${fontSizes.xxxl}rem;
     `)};
   }
   h2 {
@@ -238,7 +248,7 @@ export const pointRightLinks = css`
 
 export const layoutStyles = css`
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin: ${spacing.sm};
@@ -257,7 +267,7 @@ export const layoutStyles = css`
   `)};
 `
 
-export const headerStyles = css`
+export const footerStyles = css`
   position: fixed;
   z-index: 100;
   bottom: 0;

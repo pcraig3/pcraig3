@@ -3,7 +3,6 @@
 - work: rescheduler
 - skip link
 - page: 404 page
-- see about google analytics
 - pally scan
 
 # done
@@ -14,6 +13,7 @@
     - ✅ event calendar
     - ✅ involvement compass
     - ✅ performance platform
+- ✅ see about google analytics
 - ✅ page: things i like
 - ✅ page: things i dont like
 - ✅ add images
