@@ -176,8 +176,8 @@ export const typograpyStyles = css`
     margin-bottom: ${spacing.md};
   }
 
-  ul,
-  ol {
+  :not(nav) > ul,
+  :not(nav) > ol {
     margin-bottom: ${spacing.md};
     margin-left: 22px;
 

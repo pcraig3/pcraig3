@@ -25,13 +25,14 @@ const navStyles = css`
   `)};
 `
 
-const divStyles = css`
+const ulStyles = css`
   order: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   margin-left: -${spacing.xxs};
+  list-style: none;
   ${pointLeftLinks};
 
   .hide-menu & {
@@ -50,9 +51,11 @@ const divStyles = css`
     }
   `)};
 
-  a {
-    overflow: hidden;
-    display: inline-block;
+  li {
+    a {
+      overflow: hidden;
+      display: block;
+    }
 
     &:not(:last-of-type) {
       margin-bottom: ${spacing.xxs};
@@ -123,11 +126,13 @@ const toggleButtonProps = {
 ToggleButton.propTypes = toggleButtonProps
 
 const NavLink = ({ path, pathname }) => (
-  <Link href={`${path}`}>
-    <a {...(path === pathname ? { 'aria-current': 'page' } : {})}>
-      {path === '/' ? 'home' : path.split('/').pop()}
-    </a>
-  </Link>
+  <li>
+    <Link href={`${path}`}>
+      <a {...(path === pathname ? { 'aria-current': 'page' } : {})}>
+        {path === '/' ? 'home' : path.split('/').pop()}
+      </a>
+    </Link>
+  </li>
 )
 
 NavLink.propTypes = {
@@ -138,12 +143,12 @@ NavLink.propTypes = {
 const Nav = ({ onToggle, showMenu, pathname }) => (
   <nav className={navStyles}>
     <ToggleButton onToggle={onToggle} showMenu={showMenu} pathname={pathname} />
-    <div className={divStyles} id="navLinks">
+    <ul className={ulStyles} id="navLinks">
       {showMenu ? <NavLink path="/" pathname={pathname} /> : ''}
       <NavLink path="/about" pathname={pathname} />
       <NavLink path="/work" pathname={pathname} />
       <NavLink path="/contact" pathname={pathname} />
-    </div>
+    </ul>
   </nav>
 )
 
