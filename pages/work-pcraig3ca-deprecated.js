@@ -4,7 +4,7 @@ export default () => (
   <Post
     h1="pcraig3.ca"
     subheading="Building a well-padded trophy case"
-    title="pcraig3.ca (deprecated) —"
+    title="pcraig3.ca (deprecated) — paul craig"
     imgSrc={require('../img/p2.png')}
     imgAlt="Screenshot of the former pcraig3.ca"
     linkText="The former pcraig3.ca"

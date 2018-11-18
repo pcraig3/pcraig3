@@ -4,7 +4,7 @@ export default () => (
   <Post
     h1="The Western USC Event Calendar"
     subheading="Building the best calendar in the country"
-    title="The Western USC Event Calendar —"
+    title="The Western USC Event Calendar — paul craig"
     imgSrc={require('../img/ec.png')}
     imgAlt="Screenshot of the former westernusc.ca event calendar"
   >

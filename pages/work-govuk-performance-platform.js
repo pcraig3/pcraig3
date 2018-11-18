@@ -8,7 +8,7 @@ export default () => (
       </span>
     }
     subheading="Performing accountability"
-    title="GOV.UK Performance Platform —"
+    title="GOV.UK Performance Platform — paul craig"
     imgSrc={require('../img/pp.png')}
     imgAlt="Screenshot of the Performance Platform"
     linkText="The Performance Platform"

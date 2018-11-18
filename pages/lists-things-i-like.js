@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import BackLink from '../components/backLink'
 
 export default () => (
-  <Layout title="things liked by">
+  <Layout title="things paul craig likes">
     <h1>Things I like</h1>
 
     <p>

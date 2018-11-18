@@ -6,7 +6,7 @@ import {
 } from '../components/__styles'
 
 export default () => (
-  <Layout title="about">
+  <Layout title="about paul craig">
     <h1>About</h1>
 
     <p className={visuallyHiddenParagraphXXS}>Hey-o, thanks for stopping by.</p>

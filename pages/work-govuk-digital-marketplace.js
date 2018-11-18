@@ -8,7 +8,7 @@ export default () => (
       </span>
     }
     subheading="Making it easier to buy better stuff"
-    title="GOV.UK Digital Marketplace —"
+    title="GOV.UK Digital Marketplace — paul craig"
     imgSrc={require('../img/dm.png')}
     imgAlt="Screenshot of the Digital Marketplace"
     linkText="The Digital Marketplace"

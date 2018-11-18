@@ -4,7 +4,7 @@ export default () => (
   <Post
     h1="westernusc.ca"
     subheading="Renewing the University Students’ Council website"
-    title="westernusc.ca —"
+    title="westernusc.ca — paul craig"
     imgSrc={require('../img/sg.png')}
     imgAlt="Screenshot of the former westernusc.ca"
   >

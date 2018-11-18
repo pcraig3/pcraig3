@@ -6,7 +6,7 @@ import getConfig from 'next/config'
 const { serverRuntimeConfig } = getConfig()
 
 export default () => (
-  <Layout>
+  <Layout title="paul craig, web developer">
     <h1>
       Paul Craig<span className={visuallyhidden}>: web developer</span>
     </h1>

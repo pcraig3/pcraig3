@@ -98,7 +98,7 @@ class Layout extends Component {
         `}`}
       >
         <Head>
-          <title>{title ? `${title} paul craig` : 'paul craig'}</title>
+          <title>{title}</title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"
@@ -129,15 +129,8 @@ class Layout extends Component {
   }
 }
 
-Layout.defaultProps = {
-  children: {},
-  title: null,
-  className: css``,
-  url: {},
-}
-
 Layout.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   className: PropTypes.string,
   children: PropTypes.array.isRequired,
   router: PropTypes.object.isRequired,
