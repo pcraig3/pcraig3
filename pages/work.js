@@ -16,11 +16,7 @@ export default () => (
         subheading="Making it easier to buy better stuff"
         href="/work-govuk-digital-marketplace"
       />
-      <ListLink
-        h2="pcraig3.ca"
-        subheading="Building a well-padded trophy case"
-        href="/work-pcraig3ca-deprecated"
-      />
+
       <ListLink
         h2="westernusc.ca"
         subheading="Renewing the University Students’ Council website"

@@ -2,6 +2,7 @@ const withOptimizedImages = require('next-optimized-images')
 
 const paths = [
   '/',
+  '/404',
   '/about',
   '/contact',
   '/typography',
@@ -12,7 +13,6 @@ const paths = [
   '/work',
   '/work-govuk-performance-platform',
   '/work-govuk-digital-marketplace',
-  '/work-pcraig3ca-deprecated',
   '/work-westernuscca',
   '/work-westernuscca-event-calendar',
   '/work-involvement-compass',

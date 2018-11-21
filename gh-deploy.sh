@@ -17,6 +17,9 @@ echo "You probably want to check out [the dev branch](https://github.com/pcraig3
 echo "-- Creating a CNAME file so my custom domain still works"
 echo "pcraig3.ca" > ./out/CNAME
 
+echo "-- Creating root-level 404.html page by copying 404/index.html"
+cp ./out/404/index.html ./out/404.html
+
 git add .
 git commit -m "build and export static html files"
 
