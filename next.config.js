@@ -5,6 +5,7 @@ const paths = [
   '/404',
   '/about',
   '/contact',
+  '/cv',
   '/typography',
   '/lists',
   '/lists-places-ive-lived',

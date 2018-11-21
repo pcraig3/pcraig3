@@ -5,7 +5,7 @@ import Img from './_img'
 import BackLink from './backLink'
 import { fontSizes, spacing, mq } from './__styles'
 
-const subheadStyles = css`
+export const subheadStyles = css`
   margin-top: calc(-${spacing.lg} - ${spacing.lg});
   margin-bottom: ${spacing.lg};
 
