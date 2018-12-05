@@ -1,5 +1,5 @@
 # to do
-- pally scan
+- pa11y scan
 
 # done
 
