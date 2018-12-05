@@ -12,6 +12,7 @@ const paths = [
   '/lists-things-i-like',
   '/lists-things-i-dont-like',
   '/work',
+  '/work-cds-rescheduler',
   '/work-govuk-performance-platform',
   '/work-govuk-digital-marketplace',
   '/work-westernuscca',

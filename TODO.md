@@ -1,17 +1,16 @@
 # to do
-
-- work: rescheduler
-- page: 404 page
 - pally scan
 
 # done
 
-- work
+- ✅ page: 404 page
+- ✅ work
     - ✅ pcraig3
     - ✅ westernusc
     - ✅ event calendar
     - ✅ involvement compass
     - ✅ performance platform
+    - ✅ rescheduler
 - ✅ skip link
 - ✅ see about google analytics
 - ✅ page: things i like

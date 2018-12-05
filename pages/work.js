@@ -7,6 +7,11 @@ export default () => (
 
     <ul>
       <ListLink
+        h2="Reschedule a citizenship test"
+        subheading="Helping future Canadians today"
+        href="/work-cds-rescheduler"
+      />
+      <ListLink
         h2="GOV.UK Performance Platform"
         subheading="Performing accountability"
         href="/work-govuk-performance-platform"
