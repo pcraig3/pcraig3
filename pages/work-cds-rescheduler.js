@@ -20,8 +20,8 @@ export default () => (
         Canadian Digital Service
       </a>
       . The Rescheduler allows future Canadians with prior obligations to rebook
-      their citizenship language tests, replacing what was an anxiety-riven
-      informal process with a straightforward interaction. It’s better for end
+      their citizenship language tests, replacing an anxiety-riven informal
+      process with a far more straightforward interaction. It’s better for end
       users, and it’s better for immigration officers.
     </p>
     <p>
@@ -32,8 +32,14 @@ export default () => (
       >
         server-rendered React
       </a>{' '}
-      app, it logs errors in production, it supports a no-JS user flow, and it’s
-      exceptionally well tested (thanks largely to{' '}
+      app, it logs errors in production,{' '}
+      <a
+        href="https://digital.canada.ca/2018/08/08/supporting-users-gracefully-degrading-react/"
+        target="_blank"
+      >
+        it supports a no-JS user flow
+      </a>
+      , and it’s exceptionally well tested (thanks largely to{' '}
       <a
         href="https://twitter.com/timarney"
         target="_blank"

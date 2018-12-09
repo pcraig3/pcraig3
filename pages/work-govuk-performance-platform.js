@@ -4,7 +4,9 @@ export default () => (
   <Post
     h1={
       <span>
-        GOV.UK<br />Performance Platform
+        GOV.UK
+        <br />
+        Performance Platform
       </span>
     }
     subheading="Performing accountability"
@@ -19,18 +21,26 @@ export default () => (
       for the{' '}
       <a href="https://www.gov.uk/performance" target="_blank">
         Performance Platform
-      </a>: intended to be a centralized publisher of metrics for all UK
-      government services.
+      </a>
+      : the centralized publisher of metrics for all UK government services.
+      With much of the team focused on designing a new service, the Performance
+      Platform itself (
+      <a
+        href="https://www.gov.uk/performance/site-activity-performance-platform/traffic-to-site"
+        target="_blank"
+      >
+        which serves thousands of people a day
+      </a>
+      ) was in need of attention.
     </p>
     <p>
-      With much of the team focusing on a service redesign, the Performance
-      Platform itself was in dire need of attention. An avant-garde isomorphic{' '}
+      Originally built as an avant-garde isomorphic{' '}
       <a href="http://backbonejs.org/" target="_blank">
         Backbone
       </a>{' '}
-      app, I had the opportunity to sharpen my web dev skillz on some truly
-      cutting-edge JavaScript. Despite a fair amount of grief along the way, I
-      finally fixed the damn thing:
+      app, I had the opportunity to sharpen my web dev skillz on some
+      categorically cutting-edge JavaScript. Despite a fair amount of grief
+      along the way, I finally fixed the damn thing:
     </p>
     <ul>
       <li>I updated the node engine by several major versions</li>

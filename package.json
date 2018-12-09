@@ -1,6 +1,6 @@
 {
-  "name": "pcraig3 dot CA",
-  "version": "1.0.0",
+  "name": "pcraig3-dot-CA",
+  "version": "1.0.1",
   "description": "portfolio site (reboot) for paul craig",
   "main": "server.js",
   "scripts": {

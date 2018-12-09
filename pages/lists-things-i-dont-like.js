@@ -13,14 +13,18 @@ export default () => (
       <li>Power abuses</li>
       <li>Dirty dishes</li>
       <li>
-        “Recognizing the challenges of operationalizing enterprise
-        capabilities,”
+        “Recognizing the challenges of operationalizing enterprise capabilities”
+        (
+        <span role="img" aria-label="Face with rolling eyes">
+          🙄🙄🙄
+        </span>
+        )
       </li>
       <li>Cheeseball anthem house DJs</li>
       <li>Tim Horton’s coffee</li>
       <li>
-        Those online forms where you have to tick the box to opt-out of
-        marketing emails even though that’s not really the implication
+        Those online forms where you have to tick the box to{' '}
+        <strong>opt-out</strong> of marketing emails
       </li>
       <li>
         <a href={require('../img/kiosk.jpg')}>kiosks</a>

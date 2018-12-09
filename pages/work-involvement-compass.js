@@ -29,7 +29,7 @@ export default () => (
     </p>
     <p>
       It’s since been retired, which is fair enough given the relatively
-      carefree approach to security patches over the years.
+      lackadaisical approach to security patches over the years.
     </p>
     <p>
       But, while it existed, the Involvement Compass was a success. It looked

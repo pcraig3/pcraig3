@@ -18,6 +18,11 @@ export default () => (
       <li>Feminism</li>
       <li>APIs</li>
       <li>
+        <a href="https://www.youtube.com/watch?v=gkQoCCsu_fA" target="_blank">
+          Simian Mobile Disco
+        </a>
+      </li>
+      <li>
         <a
           href="https://www.goodreads.com/book/show/56034.The_French_Lieutenant_s_Woman"
           target="_blank"
@@ -26,7 +31,6 @@ export default () => (
         </a>
       </li>
       <li>Version control</li>
-      <li>Techno shows</li>
       <li>Phở</li>
       <li>
         <a
@@ -36,6 +40,7 @@ export default () => (
           Psycho-Pass
         </a>
       </li>
+      <li>Techno shows</li>
       <li>
         <a href="https://www.youtube.com/watch?v=sMXjtvMAFlI" target="_blank">
           the Batman Beyond intro
@@ -44,7 +49,6 @@ export default () => (
       <li>
         <a href={require('../img/nt.jpg')}>the National Theatre</a>
       </li>
-      <li>Simian Mobile Disco</li>
       <li>A hot cup of (Earl Grey) tea on a rainy day</li>
     </ul>
 

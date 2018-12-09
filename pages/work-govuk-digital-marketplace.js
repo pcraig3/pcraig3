@@ -4,7 +4,9 @@ export default () => (
   <Post
     h1={
       <span>
-        GOV.UK<br />Digital Marketplace
+        GOV.UK
+        <br />
+        Digital Marketplace
       </span>
     }
     subheading="Making it easier to buy better stuff"
@@ -23,7 +25,8 @@ export default () => (
       for the{' '}
       <a href="https://gds.blog.gov.uk/about/" target="_blank">
         Government Digital Service
-      </a>. The Marketplace is an interface between public-sector buyers and
+      </a>
+      . The Marketplace is an interface between public-sector buyers and
       private-sector suppliers. Buyers can get off-the-shelf cloud commodity
       products (like{' '}
       <a
@@ -38,7 +41,8 @@ export default () => (
         target="_blank"
       >
         whatever
-      </a>), as well as put out{' '}
+      </a>
+      ), as well as put out{' '}
       <a
         href="https://www.digitalmarketplace.service.gov.uk/digital-outcomes-and-specialists/opportunities"
         target="_blank"
@@ -49,8 +53,7 @@ export default () => (
     </p>
     <p>
       It’s run as a handful of chatty Flask apps, it’s indexed by elasticsearch,
-      it’s hosted on AWS, it’s refined through constant feedback, and it’s
-      driven by user needs.
+      it’s refined through constant feedback, and it’s driven by user needs.
     </p>
     <p>
       Working on the Digital Marketplace meant making lots of friends on a
