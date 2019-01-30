@@ -76,7 +76,7 @@ const buttonStyles = css`
   cursor: pointer;
   margin-left: ${spacing.md};
   padding: 0 ${spacing.xxs};
-  width: 75px;
+  width: 82px;
   text-align: center;
   border: 2px solid ${colours.secondary};
 
