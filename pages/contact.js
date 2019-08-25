@@ -19,7 +19,9 @@ export default () => (
       <span>
         <Link href="mailto:paul@pcraig3.ca">
           <a title="pls no spam">
-            paul<wbr />@pcraig3.ca
+            paul
+            <wbr />
+            @pcraig3.ca
           </a>
         </Link>
       </span>
@@ -28,7 +30,15 @@ export default () => (
       <span>Twitter</span>
       <span>
         <Link href="https://twitter.com/pcraig3">
-          <a title="pls follow me">@pcraig3</a>
+          <a title="pls retweet me">@pcraig3</a>
+        </Link>
+      </span>
+    </p>
+    <p>
+      <span>Instagram</span>
+      <span>
+        <Link href="https://www.instagram.com/paulgorica">
+          <a title="pls follow me">@paulgorica</a>
         </Link>
       </span>
     </p>
