@@ -7,8 +7,13 @@ export default () => (
 
     <ul>
       <ListLink
+        h2="canada-holidays.ca"
+        subheading="Statutory holidays for Canadians"
+        href="/work-canada-holidays"
+      />
+      <ListLink
         h2="Reschedule a citizenship test"
-        subheading="Helping future Canadians today"
+        subheading="Helping future Canadians (yesterday)"
         href="/work-cds-rescheduler"
       />
       <ListLink
