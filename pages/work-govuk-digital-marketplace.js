@@ -14,7 +14,7 @@ export default () => (
     imgSrc={require('../img/dm.png')}
     imgAlt="Screenshot of the Digital Marketplace"
     linkText="The Digital Marketplace"
-    href={'https://www.digitalmarketplace.service.gov.uk/'}
+    href="https://www.digitalmarketplace.service.gov.uk/"
   >
     <p>
       Between 2015 and 2017, I was part of the high-performing multidisciplinary

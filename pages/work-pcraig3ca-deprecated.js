@@ -7,8 +7,6 @@ export default () => (
     title="pcraig3.ca (deprecated) — paul craig"
     imgSrc={require('../img/p2.png')}
     imgAlt="Screenshot of the former pcraig3.ca"
-    linkText="The former pcraig3.ca"
-    href={'https://pcraig3.ca'}
   >
     <p>
       In late 2014, I put together a website to showcase other websites I’d
@@ -19,18 +17,18 @@ export default () => (
       which to break some conventions. Inspired by{' '}
       <a href="https://en-ca.wordpress.org/themes/zweig/" target="_blank">
         Simon Vandereecken
-      </a>,{' '}
+      </a>
+      ,{' '}
       <a href="http://greaterthanorequalto.net" target="_blank">
         Alan Trotter
-      </a>, and{' '}
+      </a>
+      , and{' '}
       <a href={require('../img/snowstorm-aftermath-london-on.jpg')}>
         London, Ontario
-      </a>, the idea was to see how much I could remove without confounding my (<em
-      >
-        very
-      </em>{' '}
-      occasional) visitors. Although it never made it to the WordPress Theme
-      Directory proper, you can always download a .zip from{' '}
+      </a>
+      , the idea was to see how much I could remove without confounding my (
+      <em>very</em> occasional) visitors. Although it never made it to the
+      WordPress Theme Directory proper, you can always download a .zip from{' '}
       <a href="https://github.com/pcraig3/zweig-child" target="_blank">
         the GitHub repo
       </a>{' '}

@@ -7,6 +7,11 @@ export default () => (
 
     <ul>
       <ListLink
+        h2="Claim Tax Benefits [alpha]"
+        subheading="Simple filing for quicker benefits"
+        href="/work-claim-tax-benefits"
+      />
+      <ListLink
         h2="canada-holidays.ca"
         subheading="Statutory holidays for Canadians"
         href="/work-canada-holidays"

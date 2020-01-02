@@ -14,7 +14,7 @@ export default () => (
     imgSrc={require('../img/pp.png')}
     imgAlt="Screenshot of the Performance Platform"
     linkText="The Performance Platform"
-    href={'https://www.gov.uk/performance'}
+    href="https://www.gov.uk/performance"
   >
     <p>
       In the summer of 2017, I joined the GOV.UK Performance team responsible

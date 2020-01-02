@@ -8,7 +8,7 @@ export default () => (
     imgSrc={require('../img/hols.png')}
     imgAlt="Screenshot of canada-holidays.ca"
     linkText="Canadian statutory holidays in 2020"
-    href={'https://canada-holidays.ca/'}
+    href="https://canada-holidays.ca/"
   >
     <p>
       Since September 2019, I’ve been the cleanest-designed authority on
