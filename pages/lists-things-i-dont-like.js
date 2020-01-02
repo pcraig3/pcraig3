@@ -21,7 +21,7 @@ export default () => (
         )
       </li>
       <li>Cheeseball anthem house DJs</li>
-      <li>Tim Horton’s coffee</li>
+      <li>Tim Hortons coffee</li>
       <li>
         Those online forms where you have to tick the box to{' '}
         <strong>opt-out</strong> of marketing emails
