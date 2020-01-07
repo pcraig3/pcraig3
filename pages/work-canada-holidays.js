@@ -13,8 +13,8 @@ export default () => (
     <p>
       Since September 2019, I’ve been the cleanest-designed authority on
       Canada’s stat holidays: helping working-class canucks sleep in, return
-      stuff to the mall, drive to Peterborough, or whatever else they want on
-      their 3-day weekend.
+      stuff to the mall, drive to Peterborough, or whatever else you might do on
+      a 3-day weekend.
     </p>
     <p>
       Inspired by{' '}
@@ -45,8 +45,8 @@ export default () => (
         still up!
       </a>
       ), I later decided to re-tool and release it for real. Microservices are a
-      great solution to problems I don’t have, so I combined the API and UI
-      together into{' '}
+      great solution to problems I didn’t encounter, so I combined the API and
+      UI together into{' '}
       <a href="https://github.com/pcraig3/hols/" target="_blank">
         a zippy little Node app
       </a>{' '}

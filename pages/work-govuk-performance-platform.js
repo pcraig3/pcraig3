@@ -31,16 +31,16 @@ export default () => (
       >
         which serves thousands of people a day
       </a>
-      ) was in need of attention.
+      ) was in need of some love.
     </p>
     <p>
       Originally built as an avant-garde isomorphic{' '}
       <a href="http://backbonejs.org/" target="_blank">
         Backbone
       </a>{' '}
-      app, I had the opportunity to sharpen my web dev skillz on some
-      categorically cutting-edge JavaScript. Despite a fair amount of grief
-      along the way, I finally fixed the damn thing:
+      app, I took the opportunity to sharpen my frontend skillz on some
+      cutting-edge JavaScript. Despite a healthy amount of grief along the way,
+      I finally fixed the damn thing:
     </p>
     <ul>
       <li>I updated the node engine by several major versions</li>
@@ -58,15 +58,15 @@ export default () => (
           href="https://github.com/alphagov/spotlight/pull/1084"
           target="_blank"
         >
-          I wrote for future developers the docs I wish I had had
+          I wrote for future developers the docs I wished I had had
         </a>
       </li>
     </ul>
     <p>
       As the lead frontend developer on the Performance team, I worked alongside
       some great people, I overcame some fairly unique challenges, and —
-      ultimately — I replatformed one of the Government Digital Service’s
-      flagship products.
+      ultimately — I renewed one of the Government Digital Service’s flagship
+      products.
     </p>
   </Post>
 )

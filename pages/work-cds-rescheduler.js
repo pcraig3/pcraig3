@@ -30,7 +30,7 @@ export default () => (
       >
         server-rendered React
       </a>{' '}
-      app, it logged errors in production,{' '}
+      app, it would log errors in production,{' '}
       <a
         href="https://digital.canada.ca/2018/08/08/supporting-users-gracefully-degrading-react/"
         target="_blank"
@@ -48,7 +48,7 @@ export default () => (
       ). Even when it broke, it worked.
     </p>
     <p>
-      The Rescheduler was the first{' '}
+      The Rescheduler was (as far as I know) the first{' '}
       <a
         href="https://www.tpsgc-pwgsc.gc.ca/esc-src/protection-safeguarding/niveaux-levels-eng.html"
         target="_blank"
@@ -59,7 +59,7 @@ export default () => (
       <a href="https://digital.canada.ca/our-team/" target="_blank">
         a world-class team
       </a>
-      , and for nearly a year it helped <strong>real people</strong> get on with
+      , and for about a year it helped <strong>real people</strong> get on with
       their lives.
     </p>
   </Post>

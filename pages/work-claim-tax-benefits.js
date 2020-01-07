@@ -41,12 +41,13 @@ export default () => (
     <p>
       During the <strong>Discovery</strong>, my focus was on the archeology of
       our partner department: who are we working with? how do they plan their
-      work? what systems are implicated? What are the constraints?
+      work? what systems are implicated? What are the constraints? The reports I
+      wrote elaborated the context and made the case to move forward.
     </p>
     <p>
       In the <strong>Alpha</strong> phase, myself and the CRA Service Owner came
       up with the initial concept, and we then refined it with our Service
-      Designer. In addition, I also built various prototypes with different
+      Designer. In addition, I built various prototypes using different
       technology stacks to find a balance between the preferences of our modern
       dev shop and the legacy environment we are reliant on.
     </p>
@@ -59,6 +60,7 @@ export default () => (
     </p>
     <p>My responsibilities include:</p>
     <ul>
+      <li>Evaluating the landscape (and documenting it)</li>
       <li>Picking the initial technology stack</li>
       <li>Developing the product</li>
       <li>Planning development work for upcoming sprints</li>
@@ -82,7 +84,7 @@ export default () => (
       </li>
       <li>Building proposed new features for usability testing sessions</li>
       <li>Attending / facilitating user research sessions</li>
-      <li>Presenting work to (senior) stakeholders</li>
+      <li>Presenting work to stakeholders from both departments</li>
       <li>Writing documentation / rationales of all sorts</li>
     </ul>
     <p>
