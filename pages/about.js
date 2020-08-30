@@ -19,7 +19,7 @@ const About = () => (
       <Link href="/lists-things-i-like">
         <a>like</a>
       </Link>{' '}
-      americanos, techno shows, and building shit that doesn’t suck.
+      americanos, techno shows, and shipping shit that doesn’t suck.
     </p>
     <p className={visuallyhidden}>Let’s seize some levers, yo.</p>
   </Layout>

@@ -7,9 +7,14 @@ const Work = () => (
 
     <ul>
       <ListLink
-        h2="Claim Tax Benefits [alpha]"
+        h2="COVID Alert Portal"
+        subheading="Curbing COVID in Canada"
+        href="/work-cds-covid-alert-portal"
+      />
+      <ListLink
+        h2="Claim Tax Benefits"
         subheading="Simple filing for quicker benefits"
-        href="/work-claim-tax-benefits"
+        href="/work-cds-claim-tax-benefits"
       />
       <ListLink
         h2="canada-holidays.ca"

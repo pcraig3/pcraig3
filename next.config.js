@@ -12,8 +12,9 @@ const paths = [
   '/lists-things-i-like',
   '/lists-things-i-dont-like',
   '/work',
-  '/work-claim-tax-benefits',
   '/work-canada-holidays',
+  '/work-cds-claim-tax-benefits',
+  '/work-cds-covid-alert-portal',
   '/work-cds-rescheduler',
   '/work-govuk-performance-platform',
   '/work-govuk-digital-marketplace',
@@ -30,10 +31,7 @@ const getPathExportMap = () => {
     '/about': { page: '/about' },
     '/m/about': { page: '/about', query: { showMenu: 'true' } },
    */
-  let normalPages = paths.reduce(
-    (o, key) => ({ ...o, [key]: { page: key } }),
-    {},
-  )
+  let normalPages = paths.reduce((o, key) => ({ ...o, [key]: { page: key } }), {})
   let menuPages = paths.reduce(
     (o, key) => ({
       ...o,

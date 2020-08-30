@@ -41,7 +41,7 @@ const breakpoints = {
 export const mq = Object.keys(breakpoints).reduce((accumulator, label) => {
   let prefix = typeof breakpoints[label] === 'string' ? '' : 'min-width:'
   let suffix = typeof breakpoints[label] === 'string' ? '' : 'px'
-  accumulator[label] = cls =>
+  accumulator[label] = (cls) =>
     css`
       @media (${prefix + breakpoints[label] + suffix}) {
         ${cls};
@@ -181,6 +181,12 @@ export const typograpyStyles = css`
     margin-bottom: ${spacing.md};
     margin-left: 22px;
 
+    ul,
+    ol {
+      margin-bottom: ${spacing.xxs};
+      margin-left: ${spacing.md};
+    }
+
     ${mq.xs(css`
       margin-left: 0;
     `)};
@@ -265,6 +271,7 @@ export const layoutStyles = css`
   justify-content: flex-start;
   align-items: flex-start;
   margin: ${spacing.sm};
+  margin-top: calc(${spacing.md} - ${spacing.xxs});
 
   main,
   footer {
