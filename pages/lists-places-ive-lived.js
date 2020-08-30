@@ -8,7 +8,7 @@ const censorshipStyles = css`
   }
 `
 
-export default () => (
+const ListPlaces = () => (
   <Layout
     title="places paul craig lives or has lived"
     className={censorshipStyles}
@@ -142,3 +142,5 @@ export default () => (
     <BackLink href="/lists" />
   </Layout>
 )
+
+export default ListPlaces;

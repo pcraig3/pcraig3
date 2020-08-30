@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import BackLink from '../components/backLink'
 
-export default () => (
+const ListDontLike = () => (
   <Layout title="things paul craig doesn’t like">
     <h1>Things I don’t like</h1>
 
@@ -40,3 +40,5 @@ export default () => (
     <BackLink href="/lists" />
   </Layout>
 )
+
+export default ListDontLike;

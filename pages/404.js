@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import BackLink from '../components/backLink'
 
-export default () => (
+const FourOhFour = () => (
   <Layout title="404 not found - paul craig">
     <h1>
       No. <span aria-hidden="true">🙅</span>
@@ -10,3 +10,5 @@ export default () => (
     <BackLink href="/" />
   </Layout>
 )
+
+export default FourOhFour;

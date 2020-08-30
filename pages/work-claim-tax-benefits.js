@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkCTB = () => (
   <Post
     h1="Claim Tax Benefits [alpha]"
     subheading="Simple filing for quicker benefits"
@@ -96,3 +96,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkCTB;

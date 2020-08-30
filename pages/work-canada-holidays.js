@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkCH = () => (
   <Post
     h1="canada-holidays.ca"
     subheading="Statutory holidays for Canadians"
@@ -79,3 +79,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkCH

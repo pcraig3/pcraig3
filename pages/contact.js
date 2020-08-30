@@ -11,7 +11,7 @@ const mainStyles = css`
 
   ${pointLeftJustifiedLinks};
 `
-export default () => (
+const Contact = () => (
   <Layout title="contact paul craig" className={mainStyles}>
     <h1>Contact</h1>
     <p>
@@ -62,3 +62,5 @@ export default () => (
     </p>
   </Layout>
 )
+
+export default Contact;

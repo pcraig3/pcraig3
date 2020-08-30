@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 
-export default () => (
+const Typography = () => (
   <Layout title="typography for paul craig">
     <h1>Heart of Darkness</h1>
     <h2>By Joseph Conrad</h2>
@@ -70,3 +70,5 @@ export default () => (
     </p>
   </Layout>
 )
+
+export default Typography;

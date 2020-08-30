@@ -5,6 +5,8 @@ const newEmojiEveryTenSeconds = () => {
   return emojis[index]
 }
 
-export default () => (
+const RandomEmoji = () => (
   <span title="Eat the rich!">{newEmojiEveryTenSeconds()}</span>
 )
+
+export default RandomEmoji

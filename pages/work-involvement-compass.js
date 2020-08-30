@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkIC = () => (
   <Post
     h1="The Involvement Compass"
     subheading="Matching Western students to Western’s clubs"
@@ -38,3 +38,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkIC

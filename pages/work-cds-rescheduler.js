@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkRes = () => (
   <Post
     h1="Reschedule a citizenship test"
     subheading="Helping future Canadians (yesterday)"
@@ -64,3 +64,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkRes

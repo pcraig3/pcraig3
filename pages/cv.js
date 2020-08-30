@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import { subheadStyles } from '../components/post'
 
-export default () => (
+const CV = () => (
   <Layout title="CV of paul craig">
     <h1>Paul Craig</h1>
     <p className={subheadStyles}>Codes loads in node</p>
@@ -135,3 +135,5 @@ export default () => (
     <p>Also I enjoy books but who doesn’t?</p>
   </Layout>
 )
+
+export default CV;

@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkPP = () => (
   <Post
     h1={
       <span>
@@ -70,3 +70,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkPP

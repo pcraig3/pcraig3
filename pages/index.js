@@ -5,7 +5,7 @@ import Link from 'next/link'
 import getConfig from 'next/config'
 const { serverRuntimeConfig } = getConfig()
 
-export default () => (
+const Index = () => (
   <Layout title="paul craig, web developer">
     <h1>
       Paul Craig<span className={visuallyhidden}>: web developer</span>
@@ -46,3 +46,5 @@ export default () => (
     )}
   </Layout>
 )
+
+export default Index;

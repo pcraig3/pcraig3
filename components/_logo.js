@@ -63,7 +63,7 @@ const logoStyles = css`
     border-right: 2px solid ${colours.primary};
   }
 `
-export default () => (
+const Logo = () => (
   <div className={logoStyles}>
     <Link href="/">
       <a aria-label="pcraig3.ca home page">
@@ -72,3 +72,5 @@ export default () => (
     </Link>
   </div>
 )
+
+export default Logo;

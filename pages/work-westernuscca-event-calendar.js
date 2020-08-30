@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkEC = () => (
   <Post
     h1="The Western USC Event Calendar"
     subheading="Building the best calendar in the country"
@@ -47,3 +47,5 @@ export default () => (
     </ul>
   </Post>
 )
+
+export default WorkEC

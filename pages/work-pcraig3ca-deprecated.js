@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkPCRAIG3 = () => (
   <Post
     h1="pcraig3.ca"
     subheading="Building a well-padded trophy case"
@@ -42,3 +42,5 @@ export default () => (
     <p aria-hidden="true">😛</p>
   </Post>
 )
+
+export default WorkPCRAIG3

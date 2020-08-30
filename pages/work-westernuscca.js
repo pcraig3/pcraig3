@@ -1,6 +1,6 @@
 import Post from '../components/post'
 
-export default () => (
+const WorkUSC = () => (
   <Post
     h1="westernusc.ca"
     subheading="Renewing the University Students’ Council website"
@@ -34,7 +34,8 @@ export default () => (
         aria-label="Open-sourced code for custom plugins used on the former westernusc.ca"
       >
         some open-sourced custom stuff
-      </a>. In building the site, we extended the{' '}
+      </a>
+      . In building the site, we extended the{' '}
       <a href="https://www.elegantthemes.com/gallery/divi/" target="_blank">
         Divi
       </a>{' '}
@@ -67,7 +68,8 @@ export default () => (
         aria-label="The Facebook Graph API"
       >
         APIs
-      </a>.
+      </a>
+      .
     </p>
     <p>Overhauling the website ultimately helped:</p>
     <ul>
@@ -81,19 +83,19 @@ export default () => (
     </ul>
     <p>—</p>
     <p>
-      While the site has since been re-redesigned (<span
-        role="img"
-        aria-label="Face with rolling eyes"
-      >
+      While the site has since been re-redesigned (
+      <span role="img" aria-label="Face with rolling eyes">
         🙄
-      </span>), the fervently curious can still check out{' '}
+      </span>
+      ), the fervently curious can still check out{' '}
       <a
         href="https://web.archive.org/web/20141121063027/http://westernusc.ca:80/"
         target="_blank"
         aria-label="archive.org: westernusc.ca circa november 2014"
       >
         the archived version
-      </a>, and{' '}
+      </a>
+      , and{' '}
       <a
         href="http://www.tylerbenning.com/wp-content/uploads/2015/02/usc-document.pdf"
         target="_blank"
@@ -105,3 +107,5 @@ export default () => (
     </p>
   </Post>
 )
+
+export default WorkUSC

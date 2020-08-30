@@ -5,7 +5,7 @@ import {
   visuallyHiddenParagraphXXS,
 } from '../components/__styles'
 
-export default () => (
+const About = () => (
   <Layout title="about paul craig">
     <h1>About</h1>
 
@@ -27,3 +27,5 @@ export default () => (
     <p className={visuallyhidden}>Let’s seize some levers, yo.</p>
   </Layout>
 )
+
+export default About;

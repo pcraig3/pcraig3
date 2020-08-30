@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import ListLink, { lineListsLeft } from '../components/listLink'
 
-export default () => (
+const List = () => (
   <Layout title="lists by paul craig" className={lineListsLeft}>
     <h1>Lists</h1>
 
@@ -28,3 +28,5 @@ export default () => (
     </ul>
   </Layout>
 )
+
+export default List;
