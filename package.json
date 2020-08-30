@@ -20,22 +20,22 @@
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
     "express": "^4.17.1",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^7.1.0",
-    "next": "^9.1.6",
-    "next-optimized-images": "^2.5.4",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "next": "^9.5.2",
+    "next-optimized-images": "^2.6.2",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-emotion": "^9.2.12",
-    "react-ga": "^2.7.0"
+    "react-ga": "^3.1.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-react": "^7.17.0",
-    "nodemon": "^2.0.2"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.6",
+    "nodemon": "^2.0.4"
   }
 }
