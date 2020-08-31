@@ -17,10 +17,9 @@ const WorkRes = () => (
       <a href="https://digital.canada.ca/" target="_blank">
         Canadian Digital Service
       </a>
-      . The Rescheduler allowed future Canadians with prior obligations to
-      rebook their citizenship language tests, replacing an anxiety-riven
-      informal process with a far more straightforward interaction. It was
-      better for end users, and it was better for immigration officers.
+      . The Rescheduler allowed future Canadians with prior obligations to rebook their citizenship
+      language tests, replacing an anxiety-riven informal process with a far more straightforward
+      interaction. It was better for end users, and it was better for immigration officers.
     </p>
     <p>
       It was written as a{' '}
@@ -38,11 +37,7 @@ const WorkRes = () => (
         it supported a no-JS user flow
       </a>
       , and it was exceptionally well tested (thanks largely to{' '}
-      <a
-        href="https://twitter.com/timarney"
-        target="_blank"
-        title="He’s a genius"
-      >
+      <a href="https://twitter.com/timarney" target="_blank" title="He’s a genius">
         Tim Arney
       </a>
       ). Even when it broke, it worked.
@@ -59,8 +54,7 @@ const WorkRes = () => (
       <a href="https://digital.canada.ca/our-team/" target="_blank">
         a world-class team
       </a>
-      , and for about a year it helped <strong>real people</strong> get on with
-      their lives.
+      , and for about a year it helped <strong>real people</strong> get on with their lives.
     </p>
   </Post>
 )

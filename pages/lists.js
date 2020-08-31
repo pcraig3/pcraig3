@@ -15,18 +15,10 @@ const List = () => (
         }
         href="/lists-things-i-like"
       />
-      <ListLink
-        h2="Things I don’t like"
-        subheading="omg pls no"
-        href="/lists-things-i-dont-like"
-      />
-      <ListLink
-        h2="Places I’ve lived"
-        subheading="Come visit!"
-        href="/lists-places-ive-lived"
-      />
+      <ListLink h2="Things I don’t like" subheading="omg pls no" href="/lists-things-i-dont-like" />
+      <ListLink h2="Places I’ve lived" subheading="Come visit!" href="/lists-places-ive-lived" />
     </ul>
   </Layout>
 )
 
-export default List;
+export default List

@@ -17,8 +17,8 @@ const WorkDM = () => (
     href="https://www.digitalmarketplace.service.gov.uk/"
   >
     <p>
-      Between 2015 and 2017, I was part of the high-performing multidisciplinary
-      team building out the{' '}
+      Between 2015 and 2017, I was part of the high-performing multidisciplinary team building out
+      the{' '}
       <a href="https://www.digitalmarketplace.service.gov.uk/" target="_blank">
         Digital Marketplace
       </a>{' '}
@@ -26,9 +26,8 @@ const WorkDM = () => (
       <a href="https://gds.blog.gov.uk/about/" target="_blank">
         Government Digital Service
       </a>
-      . The Marketplace is an interface between public-sector buyers and
-      private-sector suppliers. Buyers can get off-the-shelf cloud commodity
-      products (like{' '}
+      . The Marketplace is an interface between public-sector buyers and private-sector suppliers.
+      Buyers can get off-the-shelf cloud commodity products (like{' '}
       <a
         href="https://www.digitalmarketplace.service.gov.uk/g-cloud/search?q=amazon+web+services+cloud+hosting"
         target="_blank"
@@ -52,13 +51,13 @@ const WorkDM = () => (
       for suppliers to bid on.
     </p>
     <p>
-      It’s run as a handful of chatty Flask apps, it’s indexed by elasticsearch,
-      it’s refined through constant feedback, and it’s driven by user needs.
+      It’s run as a handful of chatty Flask apps, it’s indexed by elasticsearch, it’s refined
+      through constant feedback, and it’s driven by user needs.
     </p>
     <p>
-      Working on the Digital Marketplace meant making lots of friends on a
-      wicked-cool team, learning loads about building kickass digital services,
-      and doing my bit to push forward an exciting organisational change.
+      Working on the Digital Marketplace meant making lots of friends on a wicked-cool team,
+      learning loads about building kickass digital services, and doing my bit to push forward an
+      exciting organisational change.
     </p>
   </Post>
 )

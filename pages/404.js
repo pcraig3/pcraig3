@@ -11,4 +11,4 @@ const FourOhFour = () => (
   </Layout>
 )
 
-export default FourOhFour;
+export default FourOhFour

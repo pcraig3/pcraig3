@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import {
-  visuallyhidden,
-  visuallyHiddenParagraphXXS,
-} from '../components/__styles'
+import { visuallyhidden, visuallyHiddenParagraphXXS } from '../components/__styles'
 
 const About = () => (
   <Layout title="about paul craig">
@@ -28,4 +25,4 @@ const About = () => (
   </Layout>
 )
 
-export default About;
+export default About

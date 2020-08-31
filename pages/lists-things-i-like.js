@@ -33,10 +33,7 @@ const ListLike = () => (
       <li>Version control</li>
       <li>Phở</li>
       <li>
-        <a
-          href="https://myanimelist.net/anime/13601/Psycho-Pass"
-          target="_blank"
-        >
+        <a href="https://myanimelist.net/anime/13601/Psycho-Pass" target="_blank">
           Psycho-Pass
         </a>
       </li>
@@ -56,4 +53,4 @@ const ListLike = () => (
   </Layout>
 )
 
-export default ListLike;
+export default ListLike

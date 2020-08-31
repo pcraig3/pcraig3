@@ -17,17 +17,16 @@ const WorkUSC = () => (
       >
         Tyler
       </a>{' '}
-      and I lead a complete visual and architectural redesign of the web
-      presence for Western’s student government, the{' '}
+      and I lead a complete visual and architectural redesign of the web presence for Western’s
+      student government, the{' '}
       <a href="https://westernusc.ca/" target="_blank">
         University Students’ Council
       </a>{' '}
       (USC).
     </p>
     <p>
-      Guided by user research, we prioritized features most likely to benefit
-      the greatest number of students, making use of both third-party solutions
-      and{' '}
+      Guided by user research, we prioritized features most likely to benefit the greatest number of
+      students, making use of both third-party solutions and{' '}
       <a
         href="https://github.com/pcraig3?utf8=%E2%9C%93&tab=repositories&q=usc&type=&language="
         target="_blank"
@@ -74,8 +73,7 @@ const WorkUSC = () => (
     <p>Overhauling the website ultimately helped:</p>
     <ul>
       <li>
-        <strong>students</strong> by highlighting information they were looking
-        for
+        <strong>students</strong> by highlighting information they were looking for
       </li>
       <li>
         <strong>administrators</strong> by simplifying the upkeep of the site

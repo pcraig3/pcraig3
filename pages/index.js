@@ -25,10 +25,7 @@ const Index = () => (
       </li>
       <li>
         stabs{' '}
-        <a
-          href="https://twitter.com/kyliehavelock/status/1055101613726097408"
-          target="_blank"
-        >
+        <a href="https://twitter.com/kyliehavelock/status/1055101613726097408" target="_blank">
           pumpkins
         </a>
       </li>
@@ -47,4 +44,4 @@ const Index = () => (
   </Layout>
 )
 
-export default Index;
+export default Index

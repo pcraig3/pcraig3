@@ -3,13 +3,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import { css, injectGlobal } from 'react-emotion'
-import {
-  colours,
-  typograpyStyles,
-  layoutStyles,
-  footerStyles,
-  mainStyles,
-} from './__styles'
+import { colours, typograpyStyles, layoutStyles, footerStyles, mainStyles } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
 import SkipLink from './skipLink'
@@ -51,12 +45,12 @@ injectGlobal`
   ${typograpyStyles};
 `
 
-const outlineAll = function(outline) {
+const outlineAll = function (outline) {
   return outline === undefined
     ? ``
     : !outline
-      ? `* { outline: 2px solid orange;}`
-      : `* { outline: 2px solid ${outline};}`
+    ? `* { outline: 2px solid orange;}`
+    : `* { outline: 2px solid ${outline};}`
 }
 
 class Layout extends Component {
@@ -67,7 +61,7 @@ class Layout extends Component {
   }
 
   onToggle() {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { showMenu: !prevState.showMenu }
     })
   }
@@ -101,10 +95,7 @@ class Layout extends Component {
         <Head>
           <title>{title}</title>
           <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <SkipLink title={title} />
 
@@ -129,11 +120,7 @@ class Layout extends Component {
           `}`}
         >
           <Logo />
-          <Nav
-            showMenu={this.state.showMenu}
-            onToggle={this.onToggle}
-            pathname={pathname}
-          />
+          <Nav showMenu={this.state.showMenu} onToggle={this.onToggle} pathname={pathname} />
         </footer>
       </div>
     )

@@ -13,8 +13,7 @@ const ListDontLike = () => (
       <li>Power abuses</li>
       <li>Dirty dishes</li>
       <li>
-        “Recognizing the challenges of operationalizing enterprise capabilities”
-        (
+        “Recognizing the challenges of operationalizing enterprise capabilities” (
         <span role="img" aria-label="Face with rolling eyes">
           🙄🙄🙄
         </span>
@@ -23,8 +22,8 @@ const ListDontLike = () => (
       <li>Cheeseball anthem house DJs</li>
       <li>Tim Hortons coffee</li>
       <li>
-        Those online forms where you have to tick the box to{' '}
-        <strong>opt-out</strong> of marketing emails
+        Those online forms where you have to tick the box to <strong>opt-out</strong> of marketing
+        emails
       </li>
       <li>
         <a href={require('../img/kiosk.jpg')}>kiosks</a>
@@ -41,4 +40,4 @@ const ListDontLike = () => (
   </Layout>
 )
 
-export default ListDontLike;
+export default ListDontLike
