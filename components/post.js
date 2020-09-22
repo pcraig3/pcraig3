@@ -26,16 +26,7 @@ const contentStyles = css`
   `)};
 `
 
-const Post = ({
-  h1,
-  subheading,
-  title,
-  imgSrc,
-  imgAlt,
-  href,
-  linkText,
-  children,
-}) => (
+const Post = ({ h1, subheading, title, imgSrc, imgAlt, href, linkText, children }) => (
   <Layout title={title || h1}>
     <h1>{h1}</h1>
     <h2 className={subheadStyles}>{subheading}</h2>

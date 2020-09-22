@@ -36,7 +36,6 @@ const imgStyles = css`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1 1 100%;
   height: 100%;
   overflow: initial;
   padding: ${spacing.sm};
@@ -93,9 +92,7 @@ const captionStyles = css`
 
 const Figure = ({ src, alt, hoverText }) => (
   <figure className={imgStyles}>
-    <figcaption className={captionStyles}>
-      {hoverText ? <div>{hoverText}</div> : null}
-    </figcaption>
+    <figcaption className={captionStyles}>{hoverText ? <div>{hoverText}</div> : null}</figcaption>
     <img src={`${src}`} alt={alt} />
   </figure>
 )
@@ -129,11 +126,7 @@ const hoverArchivedImg = css`
 `
 
 const Img = ({ href, linkText, ...props }) => (
-  <div
-    className={
-      href ? imgWrapperStyles : `${imgWrapperStyles} ${hoverArchivedImg}`
-    }
-  >
+  <div className={href ? imgWrapperStyles : `${imgWrapperStyles} ${hoverArchivedImg}`}>
     {href ? (
       linkText ? (
         <a href={href} target="_blank" aria-label={linkText}>

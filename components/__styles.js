@@ -310,9 +310,10 @@ export const footerStyles = css`
   `)};
 
   ${mq.sm(css`
+    position: relative;
     position: sticky;
     top: ${spacing.lg};
-    flex: 1;
+    flex: 1 1 auto;
     padding: 0;
     width: initial;
     border-top: none;
@@ -325,9 +326,10 @@ export const footerStyles = css`
 `
 
 export const mainStyles = css`
-  flex: 4;
+  flex: 4 1 auto;
   margin-right: 0;
   margin-bottom: ${spacing.xl};
+  min-width: 0;
 
   ${mq.sm(css`
     margin-right: ${spacing.xs};
@@ -335,7 +337,7 @@ export const mainStyles = css`
   `)};
 
   ${mq.md(css`
-    flex: 3;
+    flex: 3 1 auto;
     margin-right: ${spacing.xl};
   `)};
 

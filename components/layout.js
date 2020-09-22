@@ -42,6 +42,12 @@ injectGlobal`
     background: ${colours.tertiary};
   }
 
+  body, #wrapper, #content {
+    &:focus {
+      outline: none;
+    }
+  }
+
   ${typograpyStyles};
 `
 
@@ -91,6 +97,7 @@ class Layout extends Component {
         className={`${css`
           ${outlineAll(query.outline)} ${layoutStyles};
         `}`}
+        tabIndex={-1}
       >
         <Head>
           <title>{title}</title>
