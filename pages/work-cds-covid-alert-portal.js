@@ -32,8 +32,15 @@ const WorkCAP = () => (
         open-source
       </a>{' '}
       Django app deployed on an AWS backend (less fun), with an automated testing and deployment
-      pipeline. Its usage varies region-by-region, but ultimately I am responsible for delivering a
-      service that is accessible, secure, and available.
+      pipeline. The Portal’s behaviour is more commodified than other parts of the system, so
+      choosing the well-understood{' '}
+      <a href="https://www.djangoproject.com/" target="_blank">
+        Django
+      </a>{' '}
+      framework allowed us to get going quickly and build sustainably as we rapidly developed our
+      MVP over a few hectic weeks. With the time we saved, we freed the team up to work on
+      higher-level problems, like robust test cases, reusable infrastructure, and our security
+      processes.
     </p>
     <p>The Portal makes up a small but important part of the holistic COVID Alert ecosystem:</p>
     <ul>
@@ -46,7 +53,7 @@ const WorkCAP = () => (
           the app
         </a>{' '}
         is user-facing: it keeps track of nearby devices for 14 days, and looks for matching devices
-        stored on server.
+        stored on the server.
       </li>
       <li>
         <a
@@ -72,9 +79,16 @@ const WorkCAP = () => (
       </li>
     </ul>
     <p>
-      The Portal helps the healthcare workers that are helping Canadians, it was (is) delivered
-      quickly and on-time using agile delivery methods, and it will keep doing what it needs to for
-      as long as it’s needed.
+      The Portal went into production for Ontario on August 14, 2020, and continues to onboard new
+      provinces — each with their own operational differences. Its usage varies region-by-region,
+      but ultimately I am responsible for delivering a service that is accessible, secure, and
+      available, while remaining flexible enough to accommodate the evolving needs of our current
+      and future users.
+    </p>
+    <p>
+      The COVID Alert Portal helps the healthcare workers that are helping Canadians, it was (and
+      still is) delivered quickly and on-time using agile delivery methods, and it will keep doing
+      what it needs to for as long as it’s needed.
     </p>
   </Post>
 )

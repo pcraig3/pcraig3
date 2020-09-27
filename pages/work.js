@@ -44,7 +44,7 @@ const Work = () => (
       />
       <ListLink
         h2="The Western USC Event Calendar"
-        subheading="Building the best calendar in the country"
+        subheading="Building the best campus calendar in the country"
         href="/work-westernuscca-event-calendar"
       />
       <ListLink

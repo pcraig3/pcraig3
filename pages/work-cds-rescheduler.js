@@ -19,7 +19,7 @@ const WorkRes = () => (
       </a>
       . The Rescheduler allowed future Canadians with prior obligations to rebook their citizenship
       language tests, replacing an anxiety-riven informal process with a far more straightforward
-      interaction. It was better for end users, and it was better for immigration officers.
+      form submission. It was better for end users, and it was better for immigration officers.
     </p>
     <p>
       It was written as a{' '}
@@ -29,7 +29,7 @@ const WorkRes = () => (
       >
         server-rendered React
       </a>{' '}
-      app, it would log errors in production,{' '}
+      app, it was logged and monitored to the gills,{' '}
       <a
         href="https://digital.canada.ca/2018/08/08/supporting-users-gracefully-degrading-react/"
         target="_blank"

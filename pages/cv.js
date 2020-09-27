@@ -24,12 +24,13 @@ const CV = () => (
           Currently on the <a href="/work-cds-covid-alert-portal">COVID Alert Portal</a>
         </li>
       </ul>
+      <li>Picks tech stacks to solve problems we have, not problems we don’t</li>
       <li>Defines, organizes, implements, and reviews dev work</li>
       <li>Collaborates across departmental silos and disciplines to keep moving forward</li>
       <li>Scopes out organisational barriers during project discoveries and proposes solutions</li>
       <li>Presents work and explains decisions to stakeholders</li>
       <li>
-        Codes lots of ES6, Python <span aria-hidden="true">🐍</span>, React, CSS, HTML, and
+        Codes lots of ES6 (JS), Python <span aria-hidden="true">🐍</span>, React, CSS, HTML, and
         sometimes Java
       </li>
       <li>

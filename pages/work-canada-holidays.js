@@ -20,12 +20,17 @@ const WorkCH = () => (
       <a href="https://www.gov.uk/bank-holidays" target="_blank" title="UK bank holidays">
         bank holidays
       </a>{' '}
-      page on GOV.UK, I built a little demo app as part of a technical exploration for{' '}
+      page on GOV.UK, I initially built{' '}
+      <a href="https://next-holidays-7qr7hdv3aa-ue.a.run.app/" target="_blank">
+        a little Next.js app
+      </a>{' '}
+      as part of a technical exploration for{' '}
       <a href="/work-cds-claim-tax-benefits">a project with the Canada Revenue Agency</a>.
     </p>
     <p>
-      Initially a Java + React containerized microservice-y thing, I eventually re-tooled and then
-      released it. Microservices are cool but not always helpful, so I combined the API and UI into{' '}
+      Initially a Java API + React UI multi-container microservice thing, it made for a good
+      reference architecture but was overly complex for long-term occasional maintainence. So I
+      smushed both halves into{' '}
       <a href="https://github.com/pcraig3/hols/" target="_blank">
         a zippy little Node app
       </a>{' '}

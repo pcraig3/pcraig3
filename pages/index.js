@@ -6,7 +6,7 @@ import getConfig from 'next/config'
 const { serverRuntimeConfig } = getConfig()
 
 const Index = () => (
-  <Layout title="paul craig, web developer">
+  <Layout title="paul craig, web developer" metaDescription="hi, I'm Paul. I build websites and eat aux casse-croûtes. get in touch: paul@pcraig3.ca">
     <h1>
       Paul Craig<span className={visuallyhidden}>: web developer</span>
     </h1>
@@ -24,9 +24,9 @@ const Index = () => (
         </Link>
       </li>
       <li>
-        stabs{' '}
-        <a href="https://twitter.com/kyliehavelock/status/1055101613726097408" target="_blank">
-          pumpkins
+        chows{' '}
+        <a href="https://twitter.com/pcraig3/status/1309970663600463873/photo/1" target="_blank">
+          dogs
         </a>
       </li>
     </ul>
