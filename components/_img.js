@@ -28,6 +28,7 @@ const _hoverImg = css`
     top: 0;
     width: 100%;
     z-index: 1;
+    opacity: .85;
   }
 `
 

@@ -171,8 +171,15 @@ export const typograpyStyles = css`
   }
   blockquote {
     margin-left: ${spacing.md};
+
+    footer {
+      ${mq.xs(css`
+        padding-left: ${spacing.md};
+      `)};
+    }
   }
-  p {
+  p,
+  blockquote {
     margin-bottom: ${spacing.md};
   }
 
@@ -339,6 +346,7 @@ export const mainStyles = css`
   ${mq.md(css`
     flex: 3 1 auto;
     margin-right: ${spacing.xl};
+    max-width: 30em;
   `)};
 
   div {

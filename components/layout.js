@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import { css, injectGlobal } from 'react-emotion'
+import HTMLComment from 'react-html-comment'
 import { colours, typograpyStyles, layoutStyles, footerStyles, mainStyles } from './__styles'
 import Logo from './_logo'
 import Nav from './_nav'
@@ -89,6 +90,7 @@ class Layout extends Component {
       children,
       title,
       className,
+      metaDescription,
       router: { query, pathname },
     } = this.props
     return (
@@ -103,8 +105,11 @@ class Layout extends Component {
           <title>{title}</title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          {metaDescription && <meta name="description" content={metaDescription} />}
         </Head>
+        <HTMLComment text="googleoff: all" />
         <SkipLink title={title} />
+        <HTMLComment text="googleon: all" />
 
         <main
           id="content"
@@ -138,6 +143,7 @@ Layout.propTypes = {
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
   children: PropTypes.array.isRequired,
+  metaDescription: PropTypes.string,
   router: PropTypes.object.isRequired,
 }
 
