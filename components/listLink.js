@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import { css } from 'react-emotion'
+import { css } from '@emotion/react'
 import Link from 'next/link'
-import { fontSizes, mq, spacing } from '../components/__styles'
+import { fontSizes, mq, spacing } from '../styles/utils'
 
 export const lineListsLeft = css`
   ul,
@@ -49,7 +49,7 @@ const listLinkStyles = css`
 `
 
 const ListLink = ({ h2, subheading, href }) => (
-  <li className={listLinkStyles}>
+  <li css={listLinkStyles}>
     <Link href={href}>
       <a>
         <h2>{h2}</h2>

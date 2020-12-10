@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
-import { visuallyhidden, visuallyHiddenParagraphXXS } from '../components/__styles'
+import { visuallyhidden, visuallyHiddenParagraphXXS } from '../styles/utils'
 
 const About = () => (
   <Layout title="about paul craig">
     <h1>About</h1>
 
-    <p className={visuallyHiddenParagraphXXS}>Hey-o, thanks for stopping by.</p>
+    <p css={visuallyHiddenParagraphXXS}>Hey-o, thanks for stopping by.</p>
     <p>
       I’m a web developer currently{' '}
       <Link href="/lists-places-ive-lived">
@@ -21,7 +21,7 @@ const About = () => (
       </Link>{' '}
       americanos, techno shows, and shipping shit that doesn’t suck.
     </p>
-    <p className={visuallyhidden}>Let’s seize some levers, yo.</p>
+    <p css={visuallyhidden}>Let’s seize some levers, yo.</p>
   </Layout>
 )
 

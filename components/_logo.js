@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { css } from 'react-emotion'
-import { fontSizes, mq, spacing, colours } from './__styles'
+import { css } from '@emotion/react'
+import { fontSizes, mq, spacing, colours } from '../styles/utils'
 
 const logoStyles = css`
   position: fixed;
@@ -64,7 +64,7 @@ const logoStyles = css`
   }
 `
 const Logo = () => (
-  <div className={logoStyles}>
+  <div css={logoStyles}>
     <Link href="/">
       <a aria-label="pcraig3.ca home page">
         <span>pcraig3</span>
@@ -73,4 +73,4 @@ const Logo = () => (
   </div>
 )
 
-export default Logo;
+export default Logo

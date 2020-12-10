@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import { css } from 'react-emotion'
+import { css } from '@emotion/react'
 import Link from 'next/link'
-import { bisqueLinks, colours, mq, pointRightLinks, pointLeftLinks, spacing } from './__styles'
+import { bisqueLinks, colours, mq, pointRightLinks, pointLeftLinks, spacing } from '../styles/utils'
 
 const navStyles = css`
   display: flex;
@@ -90,9 +90,9 @@ const buttonStyles = css`
 
 const ToggleButton = ({ onToggle, showMenu }) => {
   return (
-    <form className={formStyles}>
+    <form css={formStyles}>
       <button
-        className={buttonStyles}
+        css={buttonStyles}
         onClick={(e) => {
           e.preventDefault()
           onToggle()
@@ -130,9 +130,9 @@ NavLink.propTypes = {
 }
 
 const Nav = ({ onToggle, showMenu, pathname }) => (
-  <nav className={navStyles}>
+  <nav css={navStyles}>
     <ToggleButton onToggle={onToggle} showMenu={showMenu} pathname={pathname} />
-    <ul className={ulStyles} id="navLinks">
+    <ul css={ulStyles} id="navLinks">
       {showMenu ? <NavLink path="/" pathname={pathname} /> : ''}
       <NavLink path="/about" pathname={pathname} />
       <NavLink path="/work" pathname={pathname} />

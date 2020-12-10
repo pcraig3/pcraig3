@@ -1,4 +1,4 @@
-import { css } from 'react-emotion'
+import { css } from '@emotion/react'
 
 export const ratio = parseFloat(1.333)
 export const fontSizes = {

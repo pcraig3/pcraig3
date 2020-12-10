@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
-import { css } from 'react-emotion'
+import { css } from '@emotion/react'
 import Layout from './layout'
 import Img from './_img'
 import BackLink from './backLink'
-import { fontSizes, spacing, mq } from './__styles'
+import { fontSizes, spacing, mq } from '../styles/utils'
 
 export const subheadStyles = css`
   margin-top: calc(-${spacing.lg} - ${spacing.lg});
@@ -29,7 +29,7 @@ const contentStyles = css`
 const Post = ({ h1, subheading, title, imgSrc, imgAlt, href, linkText, children }) => (
   <Layout title={title || h1}>
     <h1>{h1}</h1>
-    <h2 className={subheadStyles}>{subheading}</h2>
+    <h2 css={subheadStyles}>{subheading}</h2>
     <Img
       src={imgSrc}
       alt={imgAlt}
@@ -37,7 +37,7 @@ const Post = ({ h1, subheading, title, imgSrc, imgAlt, href, linkText, children 
       linkText={linkText}
       hoverText={href ? 'VISIT ☞' : 'ARCHIVED ☠'}
     />
-    <div className={contentStyles}>{children}</div>
+    <div css={contentStyles}>{children}</div>
     <BackLink href="/work" />
   </Layout>
 )

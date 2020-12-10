@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { visuallyhidden, visuallyhiddenUntilFocus } from './__styles'
+import { visuallyhidden, visuallyhiddenUntilFocus } from '../styles/utils'
 
 class SkipLink extends React.Component {
   constructor(props) {
@@ -13,17 +13,17 @@ class SkipLink extends React.Component {
   }
 
   render() {
-    const props = { tabIndex: -1, className: visuallyhidden }
+    const props = { tabIndex: -1, css: visuallyhidden }
 
     return (
       <React.Fragment>
         <span ref={this.focusEl} {...props}>
           {this.props.title}
         </span>
-        <a href="#content" className={visuallyhiddenUntilFocus}>
+        <a href="#content" css={visuallyhiddenUntilFocus}>
           Skip to main content
         </a>
-        <a href="#footer" className={visuallyhiddenUntilFocus}>
+        <a href="#footer" css={visuallyhiddenUntilFocus}>
           Skip to main navigation
         </a>
       </React.Fragment>

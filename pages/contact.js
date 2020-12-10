@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { css } from 'react-emotion'
-import { spacing, pointLeftJustifiedLinks } from '../components/__styles'
+import { css } from '@emotion/react'
+import { spacing, pointLeftJustifiedLinks } from '../styles/utils'
 import Layout from '../components/layout'
 
 const mainStyles = css`
@@ -12,7 +12,7 @@ const mainStyles = css`
   ${pointLeftJustifiedLinks};
 `
 const Contact = () => (
-  <Layout title="contact paul craig" className={mainStyles}>
+  <Layout title="contact paul craig" styles={mainStyles}>
     <h1>Contact</h1>
     <p>
       <span>Email</span>

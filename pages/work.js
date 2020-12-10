@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import ListLink, { lineListsLeft } from '../components/listLink'
 
 const Work = () => (
-  <Layout title="work by paul craig" className={lineListsLeft}>
+  <Layout title="work by paul craig" styles={lineListsLeft}>
     <h1>Work</h1>
 
     <ul>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import { css } from 'react-emotion'
-import { colours, fontSizes, mq, spacing } from './__styles'
+import { css } from '@emotion/react'
+import { colours, fontSizes, mq, spacing } from '../styles/utils'
 
 const _hoverImg = css`
   background-color: #ffe4c4; /* can't use colours here because they get distorted */
@@ -28,7 +28,7 @@ const _hoverImg = css`
     top: 0;
     width: 100%;
     z-index: 1;
-    opacity: .85;
+    opacity: 0.85;
   }
 `
 
@@ -92,8 +92,8 @@ const captionStyles = css`
 `
 
 const Figure = ({ src, alt, hoverText }) => (
-  <figure className={imgStyles}>
-    <figcaption className={captionStyles}>{hoverText ? <div>{hoverText}</div> : null}</figcaption>
+  <figure css={imgStyles}>
+    <figcaption css={captionStyles}>{hoverText ? <div>{hoverText}</div> : null}</figcaption>
     <img src={`${src}`} alt={alt} />
   </figure>
 )
@@ -127,7 +127,7 @@ const hoverArchivedImg = css`
 `
 
 const Img = ({ href, linkText, ...props }) => (
-  <div className={href ? imgWrapperStyles : `${imgWrapperStyles} ${hoverArchivedImg}`}>
+  <div css={href ? imgWrapperStyles : `${imgWrapperStyles} ${hoverArchivedImg}`}>
     {href ? (
       linkText ? (
         <a href={href} target="_blank" aria-label={linkText}>

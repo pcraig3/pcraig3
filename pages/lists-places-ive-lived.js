@@ -1,4 +1,4 @@
-import { css } from 'react-emotion'
+import { css } from '@emotion/react'
 import Layout from '../components/layout'
 import BackLink from '../components/backLink'
 
@@ -9,7 +9,7 @@ const censorshipStyles = css`
 `
 
 const ListPlaces = () => (
-  <Layout title="places paul craig lives or has lived" className={censorshipStyles}>
+  <Layout title="places paul craig lives or has lived" styles={censorshipStyles}>
     <h1>Places I’ve lived</h1>
 
     <p>Currently in Ottawa.</p>

@@ -2,63 +2,13 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
-import { css, injectGlobal } from 'react-emotion'
+import { css } from '@emotion/react'
 import HTMLComment from 'react-html-comment'
-import { colours, typograpyStyles, layoutStyles, footerStyles, mainStyles } from './__styles'
+import { layoutStyles, footerStyles, mainStyles } from '../styles/utils'
 import Logo from './_logo'
 import Nav from './_nav'
 import SkipLink from './skipLink'
 import { initGA, logPageView } from '../utils/analytics'
-
-injectGlobal`
-  html {
-    font-family: 'Gothic A1', sans-serif;
-    overflow-y: scroll;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  *:focus {
-    outline: 2px solid ${colours.focus};
-  }
-  a,
-  a:visited,
-  button {
-    text-decoration: none;
-    color: ${colours.primary};
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  ::selection {
-    color: black;
-    background: ${colours.tertiary};
-  }
-
-  body, #wrapper, #content {
-    &:focus {
-      outline: none;
-    }
-  }
-
-  ${typograpyStyles};
-`
-
-const outlineAll = function (outline) {
-  return outline === undefined
-    ? ``
-    : !outline
-    ? `* { outline: 2px solid orange;}`
-    : `* { outline: 2px solid ${outline};}`
-}
 
 class Layout extends Component {
   constructor(props) {
@@ -86,21 +36,10 @@ class Layout extends Component {
   }
 
   render() {
-    const {
-      children,
-      title,
-      className,
-      metaDescription,
-      router: { query, pathname },
-    } = this.props
+    const { children, title, styles, metaDescription, router } = this.props
+
     return (
-      <div
-        id="wrapper"
-        className={`${css`
-          ${outlineAll(query.outline)} ${layoutStyles};
-        `}`}
-        tabIndex={-1}
-      >
+      <div id="wrapper" css={layoutStyles} tabIndex={-1}>
         <Head>
           <title>{title}</title>
           <meta charSet="utf-8" />
@@ -116,8 +55,8 @@ class Layout extends Component {
           name="content"
           aria-label="Main content"
           tabIndex={-1}
-          className={css`
-            ${mainStyles} ${className};
+          css={css`
+            ${mainStyles} ${styles};
           `}
         >
           {children}
@@ -127,12 +66,11 @@ class Layout extends Component {
           name="footer"
           tabIndex={-1}
           aria-label="Main navigation"
-          className={`${this.state.showMenu ? 'show-menu ' : 'hide-menu '}${css`
-            ${footerStyles};
-          `}`}
+          className={this.state.showMenu ? 'show-menu ' : 'hide-menu '}
+          css={footerStyles}
         >
           <Logo />
-          <Nav showMenu={this.state.showMenu} onToggle={this.onToggle} pathname={pathname} />
+          <Nav showMenu={this.state.showMenu} onToggle={this.onToggle} pathname={router.pathname} />
         </footer>
       </div>
     )
@@ -141,10 +79,10 @@ class Layout extends Component {
 
 Layout.propTypes = {
   title: PropTypes.string.isRequired,
-  className: PropTypes.string,
   children: PropTypes.array.isRequired,
   metaDescription: PropTypes.string,
   router: PropTypes.object.isRequired,
+  styles: PropTypes.object,
 }
 
 export default withRouter(Layout)

@@ -1,37 +1,25 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { extractCritical } from 'emotion-server'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const page = renderPage()
-    const styles = extractCritical(page.html)
-    return { ...page, ...styles }
-  }
-
-  constructor(props) {
-    super(props)
-    const { __NEXT_DATA__, ids } = props
-    if (ids) {
-      __NEXT_DATA__.ids = ids
-    }
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
   }
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           {/* tags in here appears after the tags in <HEAD> in Layout */}
-          <link
-            href="https://fonts.googleapis.com/css?family=Gothic+A1:400,600"
-            rel="stylesheet"
-          />
-          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,600" rel="stylesheet" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }
+
+export default MyDocument

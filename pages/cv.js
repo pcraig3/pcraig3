@@ -4,7 +4,7 @@ import { subheadStyles } from '../components/post'
 const CV = () => (
   <Layout title="CV of paul craig">
     <h1>Paul Craig</h1>
-    <p className={subheadStyles}>
+    <p css={subheadStyles}>
       <abbr title="Accessibility">a11y</abbr> or bust
     </p>
 
