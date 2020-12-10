@@ -27,20 +27,11 @@ const getPathExportMap = () => {
   /*
     So
     '/': { page: '/' },
-    '/m/': { page: '/', query: { showMenu: 'true' } },
     '/about': { page: '/about' },
-    '/m/about': { page: '/about', query: { showMenu: 'true' } },
    */
   let normalPages = paths.reduce((o, key) => ({ ...o, [key]: { page: key } }), {})
-  let menuPages = paths.reduce(
-    (o, key) => ({
-      ...o,
-      [`/m${key}`]: { page: key, query: { showMenu: 'true' } },
-    }),
-    {},
-  )
 
-  return { ...normalPages, ...menuPages }
+  return { ...normalPages }
 }
 
 module.exports = withOptimizedImages({

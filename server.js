@@ -10,22 +10,16 @@ app
   .then(() => {
     const server = express()
 
-    server.get(['/m/', '/m/:page'], (req, res) => {
-      const actualPage = req.params.page ? '/' + req.params.page : '/index'
-      const queryParams = { showMenu: 'true' }
-      app.render(req, res, actualPage, queryParams)
-    })
-
     server.get('*', (req, res) => {
       return handle(req, res)
     })
 
-    server.listen(3000, err => {
+    server.listen(3000, (err) => {
       if (err) throw err
       console.log('> Ready on http://localhost:3000')
     })
   })
-  .catch(ex => {
+  .catch((ex) => {
     console.error(ex.stack)
     process.exit(1)
   })

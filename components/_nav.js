@@ -1,14 +1,7 @@
 import PropTypes from 'prop-types'
 import { css } from 'react-emotion'
 import Link from 'next/link'
-import {
-  bisqueLinks,
-  colours,
-  mq,
-  pointRightLinks,
-  pointLeftLinks,
-  spacing,
-} from './__styles'
+import { bisqueLinks, colours, mq, pointRightLinks, pointLeftLinks, spacing } from './__styles'
 
 const navStyles = css`
   display: flex;
@@ -95,15 +88,12 @@ const buttonStyles = css`
   }
 `
 
-const ToggleButton = ({ onToggle, showMenu, pathname }) => {
+const ToggleButton = ({ onToggle, showMenu }) => {
   return (
-    <form
-      className={formStyles}
-      action={showMenu ? `${pathname}` : `/m${pathname}`}
-    >
+    <form className={formStyles}>
       <button
         className={buttonStyles}
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault()
           onToggle()
         }}
@@ -120,7 +110,6 @@ const ToggleButton = ({ onToggle, showMenu, pathname }) => {
 const toggleButtonProps = {
   onToggle: PropTypes.func.isRequired,
   showMenu: PropTypes.bool.isRequired,
-  pathname: PropTypes.string.isRequired,
 }
 
 ToggleButton.propTypes = toggleButtonProps
@@ -152,6 +141,9 @@ const Nav = ({ onToggle, showMenu, pathname }) => (
   </nav>
 )
 
-Nav.propTypes = toggleButtonProps
+Nav.propTypes = {
+  pathname: PropTypes.string.isRequired,
+  ...toggleButtonProps,
+}
 
 export default Nav
