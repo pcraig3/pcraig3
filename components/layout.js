@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import { css } from '@emotion/react'
-import HTMLComment from 'react-html-comment'
 import { layoutStyles, footerStyles, mainStyles } from '../styles/utils'
 import Logo from './_logo'
 import Nav from './_nav'
@@ -46,9 +45,9 @@ class Layout extends Component {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           {metaDescription && <meta name="description" content={metaDescription} />}
         </Head>
-        <HTMLComment text="googleoff: all" />
+        <script dangerouslySetInnerHTML={{ __html: `<!--googleoff: all-->` }} />
         <SkipLink title={title} />
-        <HTMLComment text="googleon: all" />
+        <script dangerouslySetInnerHTML={{ __html: `<!--googleon: all-->` }} />
 
         <main
           id="content"
