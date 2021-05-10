@@ -11,24 +11,33 @@ const CV = () => (
     <h2>work</h2>
 
     <p>
+      <strong>Senior Technical Advisor</strong>
+      <br />
+      Employment and Social Development Canada — Ottawa
+      <br />
+      2021 <span aria-label="to">→</span> now
+    </p>
+    <ul>
+      <li>Head of software development for all in-house agile development teams</li>
+      <li>Defines products, and assigns developers to teams, and oversees technical work</li>
+      <li>Picks tech stacks to solve problems we have, not problems we don’t</li>
+      <li>Plans, organizes, and reviews dev work</li>
+      <li>Collaborates across departmental silos and disciplines to keep moving forward</li>
+      <li>Presents work and explains decisions to stakeholders</li>
+    </ul>
+    <br />
+
+    <p>
       <strong>Tech Lead</strong>
       <br />
       Canadian Digital Service — Ottawa
       <br />
-      2018 <span aria-label="to">→</span> now
+      2018 <span aria-label="to">→</span> 2021
     </p>
     <ul>
-      <li>Technical lead on agile development team(s) building user-centric digital services</li>
-      <ul>
-        <li>
-          Currently on the <a href="/work-cds-covid-alert-portal">COVID Alert Portal</a>
-        </li>
-      </ul>
-      <li>Picks tech stacks to solve problems we have, not problems we don’t</li>
-      <li>Defines, organizes, implements, and reviews dev work</li>
-      <li>Collaborates across departmental silos and disciplines to keep moving forward</li>
+      <li>Technical lead on agile development teams building user-centric digital services</li>
+      <li>Organizes, implements, and reviews dev work</li>
       <li>Scopes out organisational barriers during project discoveries and proposes solutions</li>
-      <li>Presents work and explains decisions to stakeholders</li>
       <li>
         Codes lots of ES6 (JS), Python <span aria-hidden="true">🐍</span>, React, CSS, HTML, and
         sometimes Java
@@ -37,7 +46,7 @@ const CV = () => (
         Pretty good experience setting up <abbr title="Continuous integration">CI</abbr>/
         <abbr title="Continuous deployment">CD</abbr> pipelines and cloud infrastructure
       </li>
-      <li>Also I know tons about building accessible interfaces</li>
+      <li>Also I am an export in building accessible interfaces</li>
     </ul>
     <br />
 
@@ -116,7 +125,7 @@ const CV = () => (
 
     <h2>misc.</h2>
     <p>
-      I mean, I like big text designs, writing Bunz ads, and my yellow Nintendo Switch Lite. I don’t
+      I mean, I like big text designs, writing think pieces <span aria-hidden="true">🤔</span>, and my yellow Nintendo Switch Lite. I don’t
       want to come off as brash or anything, but I can probably beat u in{' '}
       <a href="https://www.nintendo.com/games/detail/wargroove-switch/" target="_blank">
         Wargroove
