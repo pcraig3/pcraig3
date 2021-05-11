@@ -23,14 +23,14 @@ echo "no!" > ./out/.nojekyll
 git add .
 git commit -m "build and export static html files"
 
-echo "-- Create a local master branch containing only the /out folder"
-git subtree split --prefix out -b master
+echo "-- Create a local main branch containing only the /out folder"
+git subtree split --prefix out -b main
 
-echo "-- Force push the (new) master branch over the current github master branch"
-git push -f origin master:master
+echo "-- Force push the (new) main branch over the current github main branch"
+git push -f origin main:main
 
-echo "-- Delete the local master branch"
-git branch -D master
+echo "-- Delete the local main branch"
+git branch -D main
 
 echo "-- Remove the commit where the static HTML was exported. We don't need this in the history."
 
