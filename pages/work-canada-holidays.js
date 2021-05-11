@@ -7,7 +7,7 @@ const WorkCH = () => (
     title="canada-holidays.ca — paul craig"
     imgSrc={require('../img/hols.png')}
     imgAlt="Screenshot of canada-holidays.ca"
-    linkText="Canadian statutory holidays in 2020"
+    linkText="Canadian statutory holidays in 2021"
     href="https://canada-holidays.ca/"
   >
     <p>
@@ -28,7 +28,7 @@ const WorkCH = () => (
       <a href="/work-cds-claim-tax-benefits">a project with the Canada Revenue Agency</a>.
     </p>
     <p>
-      Initially a Java API + React UI multi-container microservice thing, it made for a good
+      Originally a Java API + React UI multi-container microservice thing, it made for a good
       reference architecture but was overly complex for long-term occasional maintainence. So I
       smushed both halves into{' '}
       <a href="https://github.com/pcraig3/hols/" target="_blank">
@@ -51,7 +51,8 @@ const WorkCH = () => (
       >
         #4 on Bing dot com
       </a>{' '}
-      (sometimes #3), so it might be coming soon to an Edge browser near you.
+      (sometimes #2 <span aria-hidden="true">😝✌️</span>), so it might be coming soon to an Edge
+      browser near you.
     </p>
     <p>
       If you have issues with the font rhythm, take it up with{' '}

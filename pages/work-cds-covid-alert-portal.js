@@ -11,7 +11,7 @@ const WorkCAP = () => (
     href="https://healthcare-portal.herokuapp.com"
   >
     <p>
-      Since June 2020, I’ve been lead devving the COVID Alert Portal: the hippest
+      Between June 2020 and January 2021, I was Tech Lead for the COVID Alert Portal: the hippest
       government-provided cost-free solution this side of the Rideau river. Whereas the{' '}
       <a
         href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html"
@@ -81,9 +81,9 @@ const WorkCAP = () => (
     <p>
       The Portal went into production for Ontario on August 14, 2020, and continues to onboard new
       provinces — each with their own operational differences. Its usage varies region-by-region,
-      but ultimately I am responsible for delivering a service that is accessible, secure, and
-      available, while remaining flexible enough to accommodate the evolving needs of our current
-      and future users.
+      but ultimately I was responsible for delivering a service that was (and continues to be)
+      accessible, secure, and available, while accommodating the evolving needs of our current and
+      future users.
     </p>
     <p>
       The COVID Alert Portal helps the healthcare workers that are helping Canadians, it was (and

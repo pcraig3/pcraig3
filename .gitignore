@@ -1,3 +1,4 @@
 node_modules
 .next
 pages/lists-subscriptions-i-have.js
+*.DS_Store

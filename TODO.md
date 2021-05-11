@@ -5,6 +5,10 @@
 
 - ✅ page: 404 page
 - ✅ work
+    - ✅ canada vaccine tracker
+    - ✅ covid alert portal
+    - ✅ claim tacks benefits
+    - ✅ canada holidays 
     - ✅ pcraig3
     - ✅ westernusc
     - ✅ event calendar

@@ -14,7 +14,11 @@ const ListLike = () => (
 
     <ul>
       <li>falafel wrap chili sauce garlic sauce</li>
-      <li><a href="https://instagram.com/rhijk" target="_blank">@rhijk</a></li>
+      <li>
+        <a href="https://instagram.com/rhijk" target="_blank">
+          @rhijk
+        </a>
+      </li>
       <li>Americanos</li>
       <li>Feminism</li>
       <li>APIs</li>
@@ -32,11 +36,9 @@ const ListLike = () => (
         </a>
       </li>
       <li>
-        Also, <a
-          href="https://www.goodreads.com/book/show/78024.And_Quiet_Flows_the_Don"
-          target="_blank"
-        >
-          And Quiet Flows the Don
+        Also,{' '}
+        <a href="https://www.goodreads.com/book/show/78024.And_Quiet_Flows_the_Don" target="_blank">
+          And Quiet Flows the Don by Mikhail Sholokhov
         </a>
       </li>
       <li>Version control</li>
@@ -56,7 +58,12 @@ const ListLike = () => (
         <a href={require('../img/nt.jpg')}>the National Theatre</a>
       </li>
       <li>A hot cup of (Earl Grey) tea on a rainy day</li>
-      <li><a href="https://www.imdb.com/title/tt1526318" target="_blank">Borgen</a> (mere, tak!)</li>
+      <li>
+        <a href="https://www.imdb.com/title/tt1526318" target="_blank">
+          Borgen
+        </a>{' '}
+        (mere, tak!)
+      </li>
     </ul>
 
     <BackLink href="/lists" />
